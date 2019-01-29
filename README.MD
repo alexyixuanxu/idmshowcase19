@@ -1,8 +1,8 @@
-#IDM Showcase 2019 Website!
+# IDM Showcase 2019 Website!
 
-##Questions
+## Questions
 - What did people like about the previous website?
 
-##Wireframe
+## Wireframe
 
-##Design
+## Design
