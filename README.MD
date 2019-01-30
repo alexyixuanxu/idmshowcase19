@@ -1,4 +1,5 @@
 # IDM Showcase 2019 Website
+Live preview of the website [here](https://alexyixuanxu.github.io/idmshowcase19/).
 
 ## What did people like about the [previous website](http://bxmc.poly.edu/idmshow/)?
 - Single event, single page
