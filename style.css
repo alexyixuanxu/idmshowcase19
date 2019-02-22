@@ -1,8 +1,179 @@
-nav{
-	display: flex;
-	flex-direction: row;
-	justify-content: center; 
+#landing-page {
+    background-image: url(images/);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20% 0;
+/*    height: 600px;*/
+    background-color: darkgray;
 }
-ul{
-	list-formatting: none;
+
+
+/*----------------------------*/
+
+
+#main-nav {
+    background-color: lightgray;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
 }
+
+#main-nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-nav li {
+    display: inline;
+    list-style: none;
+    padding: 0 5%;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+#main-nav-logo-container {
+    width: 20%;
+}
+
+#main-nav-text-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*----------------------------*/
+
+
+#about-categories-container {
+    width: 100%;
+    display: flex;
+}
+
+#category1 {
+    background-color: rgb(100, 100, 100);
+}
+
+#category2 {
+    background-color: rgb(150, 150, 150);
+}
+
+#category3 {
+    background-color: rgb(190, 190, 190);
+}
+
+#category4 {
+    background-color: rgb(220, 220, 220);
+}
+
+.category {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-heading {
+    font-size: 1.625em;
+    line-height: 600%;
+}
+
+
+/*----------------------------*/
+
+
+#when-where {
+    display: flex;
+    justify-content: space-around;
+}
+
+#google-maps-container {
+    overflow: hidden;
+    width: 50%;
+    padding-top: 35%;
+    position: relative;
+}
+
+#google-maps-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#location-date {
+    width: 30%;
+}
+
+
+/*----------------------------*/
+
+
+#previous-shows-container {
+    width: 100%;
+    display: flex;
+}
+
+#prev-show-2018 {
+    height: 300px;
+    background-color: rgb(100, 100, 100);
+    overflow: hidden;
+}
+
+#prev-show-2017 {
+    height: 300px;
+    background-color: rgb(150, 150, 150);
+    overflow: hidden;
+}
+
+#prev-show-2016 {
+    height: 300px;
+    background-color: rgb(190, 190, 190);
+    overflow: hidden;
+}
+
+#prev-show-2015 {
+    height: 300px;
+    background-color: rgb(220, 220, 220);
+    overflow: hidden;
+}
+
+.prev-show-year-heading {
+    font-size: 1.875em;
+    position: absolute;
+}
+
+.prev-show-year-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#prev-show-2018-link, #prev-show-2017-link, #prev-show-2016-link, #prev-show-2015-link {
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+
+#prev-show-2018-link:hover, #prev-show-2017-link:hover, #prev-show-2016-link:hover, #prev-show-2015-link:hover {
+    color: white;
+}
+
+
+#img-2017 {
+    height: 100%;
+}
+
