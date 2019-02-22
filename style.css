@@ -3,3 +3,6 @@ nav{
 	flex-direction: row;
 	justify-content: center; 
 }
+ul{
+	list-formatting: none;
+}
