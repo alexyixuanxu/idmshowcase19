@@ -16,54 +16,50 @@ document.addEventListener('scroll', function() {
 
 var prevShow2018Link = document.getElementById('prev-show-2018-link');
 
-var prevShow2018 = document.getElementById('prev-show-2018');
-
 var prevShow2017Link = document.getElementById('prev-show-2017-link');
-
-var prevShow2017 = document.getElementById('prev-show-2017');
 
 var prevShow2016Link = document.getElementById('prev-show-2016-link');
 
-var prevShow2016 = document.getElementById('prev-show-2016');
-
 var prevShow2015Link = document.getElementById('prev-show-2015-link');
 
-var prevShow2015 = document.getElementById('prev-show-2015');
 
+var img2018 = document.getElementById('img-2018');
 
 var img2017 = document.getElementById('img-2017');
 
+var img2016 = document.getElementById('img-2016');
+
+var img2015 = document.getElementById('img-2015');
+
 
 prevShow2018Link.addEventListener('mouseover', function() {
-    prevShow2018.style.backgroundColor = 'blue';
+    img2018.src = 'images/2018-showcase-gif.gif';
 });
 
 prevShow2018Link.addEventListener('mouseout', function() {
-    prevShow2018.style.backgroundColor = 'rgb(100, 100, 100)';
+    img2018.src = 'images/2018-showcase-picture.png';
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
-//    prevShow2017.style.backgroundColor = 'purple';
-    img2017.src = 'images/Gif_07.gif';
+    img2017.src = 'images/2017-showcase-gif.gif';
 });
 
 prevShow2017Link.addEventListener('mouseout', function() {
-//    prevShow2017.style.backgroundColor = 'rgb(150, 150, 150)';
-    img2017.src = 'images/DSC_1256-480x325.jpg';
+    img2017.src = 'images/2017-showcase-picture.jpg';
 });
 
 prevShow2016Link.addEventListener('mouseover', function() {
-    prevShow2016.style.backgroundColor = 'green';
+    img2016.src = 'images/2016-showcase-gif.gif';
 });
 
 prevShow2016Link.addEventListener('mouseout', function() {
-    prevShow2016.style.backgroundColor = 'rgb(190, 190, 190)';
+    img2016.src = 'images/2016-showcase-picture.jpg';
 });
 
 prevShow2015Link.addEventListener('mouseover', function() {
-    prevShow2015.style.backgroundColor = 'orange';
+    img2015.src = 'images/2017-showcase-gif.gif';
 });
 
 prevShow2015Link.addEventListener('mouseout', function() {
-    prevShow2015.style.backgroundColor = 'rgb(220, 220, 220)';
+    img2015.src = 'images/2015-showcase-picture.jpg';
 });
