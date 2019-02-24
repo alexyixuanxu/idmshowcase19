@@ -57,7 +57,7 @@ prevShow2016Link.addEventListener('mouseout', function() {
 });
 
 prevShow2015Link.addEventListener('mouseover', function() {
-    img2015.src = 'images/2017-showcase-gif.gif';
+    img2015.src = 'images/2015-showcase-gif.gif';
 });
 
 prevShow2015Link.addEventListener('mouseout', function() {
