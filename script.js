@@ -1,13 +1,19 @@
-var mainNav = document.getElementById('main-nav');
-
-//setInterval(function() { console.log(window.pageYOffset); }, 1000);
-
-document.addEventListener('scroll', function() {
-    if (window.pageYOffset > 450) {
-        mainNav.style.display = 'inherit';
-    } else {
-        mainNav.style.display = 'none';
-    }
+$(document).ready(function() {
+    $(document).scroll(function() {
+        if (window.innerWidth >= 500) {
+            if (window.pageYOffset > 450) {
+                $('#main-nav').fadeIn(300);
+            } else {
+                $('#main-nav').fadeOut(300);
+            }
+        } else {  //for smaller screen widths
+            if (window.pageYOffset > 300) {
+                $('#main-nav').fadeIn(300);
+            } else {
+                $('#main-nav').fadeOut(300);
+            }
+        }
+    });
 });
 
 
@@ -32,34 +38,59 @@ var img2016 = document.getElementById('img-2016');
 var img2015 = document.getElementById('img-2015');
 
 
+var heading2018 = document.getElementById('heading-2018');
+
+var heading2017 = document.getElementById('heading-2017');
+
+var heading2016 = document.getElementById('heading-2016');
+
+var heading2015 = document.getElementById('heading-2015');
+
+
 prevShow2018Link.addEventListener('mouseover', function() {
     img2018.src = 'images/2018-showcase-gif.gif';
+    
+    heading2018.style.backgroundColor = 'rgba(255, 255, 255, 0)';
 });
 
 prevShow2018Link.addEventListener('mouseout', function() {
     img2018.src = 'images/2018-showcase-picture.png';
+    
+    heading2018.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
     img2017.src = 'images/2017-showcase-gif.gif';
+    
+    heading2017.style.backgroundColor = 'rgba(255, 255, 255, 0)';
 });
 
 prevShow2017Link.addEventListener('mouseout', function() {
     img2017.src = 'images/2017-showcase-picture.jpg';
+    
+    heading2017.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
 });
 
 prevShow2016Link.addEventListener('mouseover', function() {
     img2016.src = 'images/2016-showcase-gif.gif';
+    
+    heading2016.style.backgroundColor = 'rgba(255, 255, 255, 0)';
 });
 
 prevShow2016Link.addEventListener('mouseout', function() {
     img2016.src = 'images/2016-showcase-picture.jpg';
+    
+    heading2016.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
 });
 
 prevShow2015Link.addEventListener('mouseover', function() {
     img2015.src = 'images/2015-showcase-gif.gif';
+    
+    heading2015.style.backgroundColor = 'rgba(255, 255, 255, 0)';
 });
 
 prevShow2015Link.addEventListener('mouseout', function() {
     img2015.src = 'images/2015-showcase-picture.jpg';
+    
+    heading2015.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
 });

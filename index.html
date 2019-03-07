@@ -6,7 +6,11 @@
     
     <title>IDM Showcase 2019</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,9 +32,10 @@
             </div>
             
             <div id="main-nav-text-container">
-                <li><a href="#about">About</a></li>
-                <li><a href="#previous-shows">Previous Shows</a></li>
                 <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#when-where">When&#47;Where</a></li>
+                <li><a href="#previous-shows">Previous Shows</a></li>
             </div>
         </ul>
     </nav>
@@ -38,14 +43,18 @@
     <!--------------------------------------------->
     
     <section id="rsvp">
-        
+        <a id="rsvp-button" href="">
+            <div>
+                <h2>RSVP</h2>
+            </div>
+        </a>
     </section>
     
     <!--------------------------------------------->
     
     <section id="about">
         <div id="about-text">
-            <h2>About</h2>
+            <h2 class="section-heading">About</h2>
             
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus lobortis nibh quis commodo. Quisque in dui et sem facilisis mollis sed vitae nisi. Nam posuere id justo at gravida. Sed id dolor ut nunc egestas scelerisque at ut purus. Nulla facilisi. Nam commodo, nisl at dignissim tempus, quam leo mattis augue, sodales laoreet nunc ipsum sed elit. Integer vel tristique risus. Etiam aliquet et lacus id egestas. Pellentesque vitae tortor sit amet lorem finibus congue. Donec mauris ipsum, venenatis pulvinar tempor a, venenatis vitae augue. Pellentesque lorem diam, laoreet ac arcu auctor, molestie sagittis lectus. Quisque eget mauris bibendum massa elementum pretium.
@@ -79,7 +88,7 @@
     <!--------------------------------------------->
     
     <section id="when-where">
-        <h2>When/Where</h2>
+        <h2 class="section-heading">When/Where</h2>
         
         <div id="when-where-content-container">
             <div id="google-maps-container">
@@ -87,20 +96,22 @@
             </div>
             
             <div id="location-date">
-                <h3>Location:</h3>
-            
-                <p>
-                    NYU MAGNET<br>
-                    2 MetroTech Center<br>
-                    8th Floor, Brooklyn, NY 11201
-                </p>
+                <div id="location">
+                    <h3>Location:</h3>
+                    <p>
+                        NYU MAGNET<br>
+                        2 MetroTech Center<br>
+                        8th Floor, Brooklyn, NY 11201
+                    </p>
+                </div>
                 
-                <h3>Date:</h3>
-                
-                <p>
-                    Month Day, 2019<br>
-                    Time
-                </p>
+                <div id="date">
+                    <h3>Date:</h3>
+                    <p>
+                        Month Day, 2019<br>
+                        Time
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -108,12 +119,12 @@
     <!--------------------------------------------->
     
     <section id="previous-shows">
-        <h2>Previous Shows</h2>
+        <h2 class="section-heading">Previous Shows</h2>
         
         <div id="previous-shows-container">
             <a id="prev-show-2018-link" href="http://bxmc.poly.edu/idmshow/">
                 <div id="prev-show-2018" class="prev-show-year-container">
-                    <h3 class="prev-show-year-heading">2018</h3>
+                    <h3 id="heading-2018" class="prev-show-year-heading">2018</h3>
                     
                     <img id="img-2018" src="images/2018-showcase-picture.png" alt="A project from the 2018 IDM Showcase">
                 </div>
@@ -121,7 +132,7 @@
             
             <a id="prev-show-2017-link" href="http://idm.engineering.nyu.edu/idm-student-showcase-2017/">
                 <div id="prev-show-2017" class="prev-show-year-container">
-                    <h3 class="prev-show-year-heading">2017</h3>
+                    <h3 id="heading-2017" class="prev-show-year-heading">2017</h3>
                     
                     <img id="img-2017" src="images/2017-showcase-picture.jpg" alt="A project from the 2017 IDM Showcase">
                 </div>
@@ -129,7 +140,7 @@
             
             <a id="prev-show-2016-link" href="http://idm.engineering.nyu.edu/idm-student-showcase-2016/">
                 <div id="prev-show-2016" class="prev-show-year-container">
-                    <h3 class="prev-show-year-heading">2016</h3>
+                    <h3 id="heading-2016" class="prev-show-year-heading">2016</h3>
                     
                     <img id="img-2016" src="images/2016-showcase-picture.jpg" alt="A project from the 2016 IDM Showcase">
                 </div>
@@ -137,7 +148,7 @@
             
             <a id="prev-show-2015-link" href="http://idm.engineering.nyu.edu/idm-student-showcase-2015/">
                 <div id="prev-show-2015" class="prev-show-year-container">
-                    <h3 class="prev-show-year-heading">2015</h3>
+                    <h3 id="heading-2015" class="prev-show-year-heading">2015</h3>
                     
                     <img id="img-2015" src="images/2015-showcase-picture.jpg" alt="A project from the 2015 IDM Showcase">
                 </div>
@@ -150,7 +161,15 @@
     <!--------------------------------------------->
     
     <footer>
+        <div id="footer-social-media-container">
+            <a href="https://twitter.com/idmnyu" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/idmnyu/" class="fa fa-instagram"></a>
+        </div>
         
+        <div id="footer-text-links-container">
+            <a href="http://idm.engineering.nyu.edu/">IDM at NYU Tandon</a> | 
+            <a href="">Acknowledgements</a>
+        </div>
     </footer>
     
     <script src="script.js"></script>
