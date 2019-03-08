@@ -29,12 +29,10 @@
     top: 0;
     left: 0;
     z-index: 1;
-}
-
-#main-nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: none;
 }
 
 #main-nav li {
@@ -50,6 +48,7 @@
 
 #main-nav-logo-container {
     width: 20%;
+    display: inline-block;
 }
 
 #main-nav-dropdown{
@@ -58,6 +57,10 @@
 
 #main-nav-text-container {
     width: 60%;
+    float: right;
+}
+
+#main-nav-text-container ul {
     display: flex;
     justify-content: space-around;
 }
