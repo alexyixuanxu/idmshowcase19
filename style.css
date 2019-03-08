@@ -19,8 +19,6 @@
 
 
 /*----------------------------*/
-
-
 #main-nav {
     background-color: lightgray;
     width: 100%;
@@ -32,6 +30,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    height: 60px;
+    overflow: visible;
 /*    display: none;*/
 }
 
@@ -108,15 +109,14 @@
     }
 
     /* Dropdown Content (Hidden by Default) */
-    #dropdown-content {
+    .dropdown-content {
         display: none;
         background-color: white;
-        z-index: 2;
-        margin-top: 50px;
+        margin-top: 250px;
     }
 
     /* Links inside the dropdown */
-    #dropdown-content li a {
+    .dropdown-content li a{
         padding: 15px;
         display: block;
     }
