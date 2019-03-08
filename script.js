@@ -16,6 +16,28 @@ $(document).ready(function() {
     });
 });
 
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
+function toggleDropdown() {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+        let closedDropdown = dropdowns[i];
+        closedDropdown.classList.toggle("show");
+        closedDropdown.querySelector("a").classList.toggle("show");
+    }
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#dropbtn')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            let openedDropdown = dropdowns[i];
+            if (openedDropdown.classList.contains('show')) {
+                openedDropdown.classList.remove('show');
+                openedDropdown.querySelector("a").classList.remove("show");
+            }
+        }
+    }
+}
 
 //----------------------------------------
 
