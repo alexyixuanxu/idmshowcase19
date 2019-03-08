@@ -1,20 +1,20 @@
-$(document).ready(function() {
-    $(document).scroll(function() {
-        if (window.innerWidth >= 500) {
-            if (window.pageYOffset > 450) {
-                $('#main-nav').fadeIn(300);
-            } else {
-                $('#main-nav').fadeOut(300);
-            }
-        } else {  //for smaller screen widths
-            if (window.pageYOffset > 300) {
-                $('#main-nav').fadeIn(300);
-            } else {
-                $('#main-nav').fadeOut(300);
-            }
-        }
-    });
-});
+//$(document).ready(function() {
+//    $(document).scroll(function() {
+//        if (window.innerWidth >= 500) {
+//            if (window.pageYOffset > 450) {
+//                $('#main-nav').fadeIn(300);
+//            } else {
+//                $('#main-nav').fadeOut(300);
+//            }
+//        } else {  //for smaller screen widths
+//            if (window.pageYOffset > 300) {
+//                $('#main-nav').fadeIn(300);
+//            } else {
+//                $('#main-nav').fadeOut(300);
+//            }
+//        }
+//    });
+//});
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content
 function toggleDropdown() {
@@ -38,6 +38,7 @@ window.onclick = function(event) {
         }
     }
 }
+
 
 //----------------------------------------
 

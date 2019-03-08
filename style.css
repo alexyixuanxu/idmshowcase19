@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20% 0;
+    padding: 20% 0 15% 0;
     background-color: darkgray;
 }
 
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: none;
+/*    display: none;*/
 }
 
 #main-nav li {
@@ -63,10 +63,17 @@
 #main-nav-text-container ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #main-nav-text-container a:hover {
     color: white;
+}
+
+#nav-rsvp-button div {
+    background-color: gray;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 
@@ -124,11 +131,13 @@
 /*----------------------------*/
 
 
+/*
 #rsvp {
     display: flex;
     justify-content: center;
     padding-top: 100px;
 }
+*/
 
 #rsvp-button {
     background-color: lightgray;
@@ -340,6 +349,12 @@
 
 @media screen and (max-width: 430px) {
     #prev-show-2018-link, #prev-show-2017-link, #prev-show-2016-link, #prev-show-2015-link {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #img-2018, #img-2017, #img-2016, #img-2015 {
         width: 100%;
     }
 }
