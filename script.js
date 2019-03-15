@@ -1,3 +1,27 @@
+var showcaseLogo = document.getElementById('showcase-logo');
+
+showcaseLogo.addEventListener('mouseover', function() {
+    showcaseLogo.src = 'images/idmstickerblinkblack.gif';
+});
+
+showcaseLogo.addEventListener('mouseout', function() {
+    showcaseLogo.src = 'images/idmstickertransparent.png';
+});
+
+
+var navRsvpButton = document.getElementById('nav-rsvp-button');
+
+var navRsvpButtonText = document.getElementById('nav-rsvp-button-text');
+
+navRsvpButton.addEventListener('mouseover', function() {
+    navRsvpButtonText.style.textShadow = '0px 3px 10px white';
+});
+
+navRsvpButton.addEventListener('mouseout', function() {
+    navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
+});
+
+
 //$(document).ready(function() {
 //    $(document).scroll(function() {
 //        if (window.innerWidth >= 500) {
@@ -64,47 +88,55 @@ var heading2015 = document.getElementById('heading-2015');
 prevShow2018Link.addEventListener('mouseover', function() {
     img2018.src = 'images/2018-showcase-gif.gif';
     
-    heading2018.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    heading2018.style.color = 'white';
+    heading2018.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2018Link.addEventListener('mouseout', function() {
     img2018.src = 'images/2018-showcase-picture.png';
     
-    heading2018.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    heading2018.style.color = '#00A0C6';
+    heading2018.style.textShadow = '0px 3px 10px #00A0C6';
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
     img2017.src = 'images/2017-showcase-gif.gif';
     
-    heading2017.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    heading2017.style.color = 'white';
+    heading2017.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2017Link.addEventListener('mouseout', function() {
     img2017.src = 'images/2017-showcase-picture.jpg';
     
-    heading2017.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    heading2017.style.color = '#FFFE00';
+    heading2017.style.textShadow = '0px 3px 10px #FFFE00';
 });
 
 prevShow2016Link.addEventListener('mouseover', function() {
     img2016.src = 'images/2016-showcase-gif.gif';
     
-    heading2016.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    heading2016.style.color = 'white';
+    heading2016.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2016Link.addEventListener('mouseout', function() {
     img2016.src = 'images/2016-showcase-picture.jpg';
     
-    heading2016.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    heading2016.style.color = '#FFFE00';
+    heading2016.style.textShadow = '0px 3px 10px #FFFE00'
 });
 
 prevShow2015Link.addEventListener('mouseover', function() {
     img2015.src = 'images/2015-showcase-gif.gif';
     
-    heading2015.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    heading2015.style.color = 'white';
+    heading2015.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2015Link.addEventListener('mouseout', function() {
     img2015.src = 'images/2015-showcase-picture.jpg';
     
-    heading2015.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    heading2015.style.color = '#F0037F';
+    heading2015.style.textShadow = '0px 3px 10px #F0037F';
 });
