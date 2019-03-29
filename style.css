@@ -46,9 +46,13 @@ html, body {
 }
 
 #landing-page-heading {
-    font-size: 100px;
+    font-size: 200px;
+    margin: 4%;
     color: #FFFE00;
     text-shadow: 0px 3px 20px #FFFE00, -10px -10px #F0037F, -10px -7px 20px #F0037F, -20px -20px #00A0C6, -20px -17px 20px #00A0C6;
+}
+#landing-page .all-round-gothic-book-font{
+    margin: 0;
 }
 
 
