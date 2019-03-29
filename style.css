@@ -51,8 +51,35 @@ html, body {
     color: #FFFE00;
     text-shadow: 0px 3px 20px #FFFE00, -10px -10px #F0037F, -10px -7px 20px #F0037F, -20px -20px #00A0C6, -20px -17px 20px #00A0C6;
 }
+
 #landing-page .all-round-gothic-book-font{
     margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    #landing-page-heading {
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #landing-page-heading {
+        font-size: 100px;
+    }
+    
+    #landing-page {
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #landing-page-heading {
+        font-size: 50px;
+    }
+    
+    #landing-page {
+        padding-top: 30%;
+    }
 }
 
 
@@ -242,6 +269,7 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 #about-heading {
@@ -255,6 +283,7 @@ html, body {
 #about-text {
     color: #FFFE00;
     width: 40%;
+    font-size: 18px;
 }
 
 #about-categories-container {
@@ -289,7 +318,7 @@ html, body {
 
 .category {
     width: 25%;
-    padding: 10% 0;
+    padding: 7% 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,6 +327,7 @@ html, body {
 .category-heading {
     font-size: 1.625em;
     text-align: center;
+    width: 90%;
 }
 
 #about-submit-text {
@@ -355,6 +385,31 @@ html, body {
     }
 }
 
+@media screen and (min-width: 890px) {
+    .category-heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .category-heading {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .category-heading {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1720px) {
+    .category-heading {
+        font-size: 60px;
+        width: 80%;
+    }
+}
+
 
 /*----------------------------*/
 
@@ -368,6 +423,7 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding-bottom: 40px;
 }
 
@@ -456,6 +512,7 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding-bottom: 40px;
 }
 
@@ -470,6 +527,7 @@ html, body {
 #previous-shows-text {
     color: #FFFE00;
     width: 40%;
+    font-size: 18px;
 }
 
 #previous-shows-container {
@@ -618,6 +676,18 @@ html, body {
     }
 }
 
+@media screen and (min-width: 890px) {
+    .prev-show-year-heading {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .prev-show-year-heading {
+        font-size: 50px;
+    }
+}
+
 
 /*----------------------------*/
 
@@ -647,7 +717,7 @@ footer {
     text-decoration: none;
     border-radius: 50%;
     line-height: 16px;
-
+    
     border: 2px solid #F0037F;
     color: #F0037F;
     box-shadow: 0px 3px 10px #F0037F;
