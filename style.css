@@ -643,8 +643,20 @@ footer {
     text-decoration: none;
     border-radius: 50%;
     line-height: 16px;
+
+    border: 2px solid #F0037F;
+    color: #F0037F;
+    box-shadow: 0px 3px 10px #F0037F;
+    text-shadow: 0px 3px 10px #F0037F;
 }
 
+.fa:hover {
+    border-color: white;
+    color: white;
+    box-shadow: 0px 3px 10px white;
+    text-shadow: 0px 3px 10px white;
+}
+/*
 .fa-twitter {
     border: 2px solid #F0037F;
     color: #F0037F;
@@ -672,6 +684,7 @@ footer {
     box-shadow: 0px 3px 10px white;
     text-shadow: 0px 3px 10px white;
 }
+*/
 
 #footer-divider {
     background-color: #FFFE00;
