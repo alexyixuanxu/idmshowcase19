@@ -7,6 +7,20 @@ html, body {
     text-align: center;
 }
 
+@font-face {
+    font-family: NeonGlow;
+    src: url(neon_glow/neon-glow.otf);
+}
+
+@font-face {
+    font-family: NeonGlowLight;
+    src: url(neon_glow/neon-glow-light.otf);
+}
+
+.neon-glow-font {
+    font-family: NeonGlowLight;
+}
+
 
 /*----------------------------*/
 
@@ -263,6 +277,7 @@ html, body {
 
 .category-heading {
     font-size: 1.625em;
+    text-align: center;
 }
 
 #about-submit-text {
