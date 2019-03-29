@@ -244,7 +244,7 @@ html, body {
     text-align: left;
     color: #00A0C6;
     width: 40%;
-    font-size: 50px;
+    font-size: 70px;
     text-shadow: 0px 5px 20px #00A0C6;
 }
 
@@ -339,6 +339,18 @@ html, body {
     }
 }
 
+@media screen and (min-width: 1300px) {
+    #about-heading {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about-heading {
+        font-size: 50px;
+    }
+}
+
 
 /*----------------------------*/
 
@@ -359,7 +371,7 @@ html, body {
     text-align: left;
     color: #F0037F;
     width: 40%;
-    font-size: 50px;
+    font-size: 70px;
     text-shadow: 0px 5px 20px #F0037F;
 }
 
@@ -415,6 +427,18 @@ html, body {
     }
 }
 
+@media screen and (min-width: 1300px) {
+    #when-where-heading {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #when-where-heading {
+        font-size: 50px;
+    }
+}
+
 
 /*----------------------------*/
 
@@ -435,7 +459,7 @@ html, body {
     text-align: left;
     color: #FFFE00;
     width: 40%;
-    font-size: 50px;
+    font-size: 70px;
     text-shadow: 0px 5px 20px #FFFE00;
 }
 
@@ -575,6 +599,18 @@ html, body {
     #previous-shows-text-container {
         flex-direction: column;
         padding: 0 5%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #previous-shows-heading {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #previous-shows-heading {
+        font-size: 50px;
     }
 }
 
