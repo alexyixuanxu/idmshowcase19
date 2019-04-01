@@ -1,3 +1,28 @@
+var landingPageHeading = document.getElementById('landing-page-heading');
+
+var yellowLandingHeading = 'front';
+
+//color flicker for landing page heading
+setInterval(function() {
+    if (yellowLandingHeading == 'front') {
+        landingPageHeading.style.color = '#00A0C6';
+        landingPageHeading.style.textShadow = '0px 3px 20px #00A0C6, -10px -10px #FFFE00, -10px -7px 20px #FFFE00, -20px -20px #F0037F, -20px -17px 20px #F0037F';
+        yellowLandingHeading = 'middle';
+    } else if (yellowLandingHeading == 'middle') {
+        landingPageHeading.style.color = '#F0037F';
+        landingPageHeading.style.textShadow = '0px 3px 20px #00A0C6, -10px -10px #00A0C6, -10px -7px 20px #00A0C6, -20px -20px #FFFE00, -20px -17px 20px #FFFE00';
+        yellowLandingHeading = 'back';
+    } else {
+        landingPageHeading.style.color = '#FFFE00';
+        landingPageHeading.style.textShadow = '0px 3px 20px #FFFE00, -10px -10px #F0037F, -10px -7px 20px #F0037F, -20px -20px #00A0C6, -20px -17px 20px #00A0C6';
+        yellowLandingHeading = 'front';
+    }
+}, 1000);
+
+
+//----------------------------------------
+
+
 var showcaseLogo = document.getElementById('showcase-logo');
 
 showcaseLogo.addEventListener('mouseover', function() {
@@ -13,13 +38,60 @@ var navRsvpButton = document.getElementById('nav-rsvp-button');
 
 var navRsvpButtonText = document.getElementById('nav-rsvp-button-text');
 
+var stopNavRsvpFlicker = false;
+
+var navRsvpMagentaCyan = true;
+
 navRsvpButton.addEventListener('mouseover', function() {
+    stopNavRsvpFlicker = true;
+    
+    navRsvpButtonText.style.color = 'white';
+    
     navRsvpButtonText.style.textShadow = '0px 3px 10px white';
+    
+    navRsvpButtonText.style.borderColor = 'white';
+    
+    navRsvpButtonText.style.boxShadow = '0px 2px 20px white';
 });
 
 navRsvpButton.addEventListener('mouseout', function() {
+    stopNavRsvpFlicker = false;
+    
+    navRsvpButtonText.style.color = '#00A0C6';
+            
     navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
+            
+    navRsvpButtonText.style.borderColor = '#F0037F';
+            
+    navRsvpButtonText.style.boxShadow = '0px 2px 20px #F0037F';
 });
+
+//color flicker for the nav rsvp button
+setInterval(function() {
+    if (stopNavRsvpFlicker == false) {
+        if (navRsvpMagentaCyan == true) {
+            navRsvpButtonText.style.color = '#F0037F';
+            
+            navRsvpButtonText.style.textShadow = '0px 3px 10px #F0037F';
+            
+            navRsvpButtonText.style.borderColor = '#00A0C6';
+            
+            navRsvpButtonText.style.boxShadow = '0px 2px 20px #00A0C6';
+            
+            navRsvpMagentaCyan = false;
+        } else {
+            navRsvpButtonText.style.color = '#00A0C6';
+            
+            navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
+            
+            navRsvpButtonText.style.borderColor = '#F0037F';
+            
+            navRsvpButtonText.style.boxShadow = '0px 2px 20px #F0037F';
+            
+            navRsvpMagentaCyan = true;
+        };
+    }
+}, 1000);
 
 
 //$(document).ready(function() {
@@ -53,6 +125,67 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+//----------------------------------------
+
+
+var rsvpButton = document.getElementById('rsvp-button');
+
+var stopRsvpFlicker = false;
+
+var rsvpMagentaCyan = true;
+
+rsvpButton.addEventListener('mouseover', function() {
+    stopRsvpFlicker = true;
+    
+    rsvpButton.style.color = 'white';
+    
+    rsvpButton.style.textShadow = '0px 8px 20px white';
+    
+    rsvpButton.style.borderColor = 'white';
+    
+    rsvpButton.style.boxShadow = '0px 7px 20px white';
+});
+
+rsvpButton.addEventListener('mouseout', function() {
+    stopRsvpFlicker = false;
+    
+    rsvpButton.style.color = '#00A0C6';
+            
+    rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
+            
+    rsvpButton.style.borderColor = '#F0037F';
+            
+    rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
+});
+
+//color flicker for the rsvp button
+setInterval(function() {
+    if (stopRsvpFlicker == false) {
+        if (rsvpMagentaCyan == true) {
+            rsvpButton.style.color = '#F0037F';
+            
+            rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
+            
+            rsvpButton.style.borderColor = '#00A0C6';
+            
+            rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
+            
+            rsvpMagentaCyan = false;
+        } else {
+            rsvpButton.style.color = '#00A0C6';
+            
+            rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
+            
+            rsvpButton.style.borderColor = '#F0037F';
+            
+            rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
+            
+            rsvpMagentaCyan = true;
+        }
+    }
+}, 1000);
 
 
 //----------------------------------------
@@ -96,7 +229,7 @@ prevShow2018Link.addEventListener('mouseout', function() {
     img2018.src = 'images/2018-showcase-picture.png';
     
     heading2018.style.color = '#00A0C6';
-    heading2018.style.textShadow = '0px 3px 10px #00A0C6';
+    heading2018.style.textShadow = '0px 3px 10px rgba(0, 160, 198, 0.5)';
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
@@ -110,7 +243,7 @@ prevShow2017Link.addEventListener('mouseout', function() {
     img2017.src = 'images/2017-showcase-picture.jpg';
     
     heading2017.style.color = '#FFFE00';
-    heading2017.style.textShadow = '0px 3px 10px #FFFE00';
+    heading2017.style.textShadow = '0px 3px 10px rgba(255, 254, 0, 0.5)';
 });
 
 prevShow2016Link.addEventListener('mouseover', function() {
@@ -124,7 +257,7 @@ prevShow2016Link.addEventListener('mouseout', function() {
     img2016.src = 'images/2016-showcase-picture.jpg';
     
     heading2016.style.color = '#FFFE00';
-    heading2016.style.textShadow = '0px 3px 10px #FFFE00'
+    heading2016.style.textShadow = '0px 3px 10px rgba(255, 254, 0, 0.5)'
 });
 
 prevShow2015Link.addEventListener('mouseover', function() {
@@ -138,5 +271,5 @@ prevShow2015Link.addEventListener('mouseout', function() {
     img2015.src = 'images/2015-showcase-picture.jpg';
     
     heading2015.style.color = '#F0037F';
-    heading2015.style.textShadow = '0px 3px 10px #F0037F';
+    heading2015.style.textShadow = '0px 3px 10px rgba(240, 3, 127, 0.5)';
 });

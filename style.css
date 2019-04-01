@@ -148,6 +148,7 @@ html, body {
     border: 3px solid #F0037F;
     box-shadow: 0px 2px 20px #F0037F;
     text-shadow: 0px 3px 10px #00A0C6;
+    color: #00A0C6;
 }
 
 
@@ -197,7 +198,7 @@ html, body {
     /* Dropdown Content (Hidden by Default) */
     .dropdown-content {
         display: none;
-        background-color: white;
+        background-color: rgb(31, 31, 31, 0.7);
         margin-top: 250px;
     }
 
@@ -205,6 +206,10 @@ html, body {
     .dropdown-content li a{
         padding: 15px;
         display: block;
+    }
+    
+    #dropdown-about:hover, #dropdown-when-where:hover, #dropdown-previous-shows:hover, #dropdown-rsvp:hover {
+        color: white;
     }
 
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -295,25 +300,25 @@ html, body {
 #category1 {
     background-color: #FFFE00;
     color: #00A0C6;
-    text-shadow: 0px 3px 10px #00A0C6;
+    text-shadow: 0px 3px 10px rgba(0, 160, 198, 0.5);
 }
 
 #category2 {
     background-color: #F0037F;
     color: #FFFE00;
-    text-shadow: 0px 3px 10px #FFFE00;
+    text-shadow: 0px 3px 10px rgba(255, 254, 0, 0.5);
 }
 
 #category3 {
     background-color: #00A0C6;
     color: #FFFE00;
-    text-shadow: 0px 3px 10px #FFFE00;
+    text-shadow: 0px 3px 10px rgba(255, 254, 0, 0.5);
 }
 
 #category4 {
     background-color: #FFFE00;
     color: #F0037F;
-    text-shadow: 0px 3px 10px #F0037F;
+    text-shadow: 0px 3px 10px rgba(240, 3, 127, 0.5);
 }
 
 .category {
@@ -438,6 +443,7 @@ html, body {
 #when-where-text {
     color: #FFFE00;
     width: 40%;
+    font-size: 18px;
 }
 
 #when-where-content-container {
@@ -541,7 +547,7 @@ html, body {
     background-color: #FFFE00;
     color: #00A0C6;
     overflow: hidden;
-    text-shadow: 0px 3px 10px #00A0C6;
+    text-shadow: 0px 3px 10px rgba(0, 160, 198, 0.5);
 }
 
 #prev-show-2017 {
@@ -549,7 +555,7 @@ html, body {
     background-color: #F0037F;
     color: #FFFE00;
     overflow: hidden;
-    text-shadow: 0px 3px 10px #FFFE00;
+    text-shadow: 0px 3px 10px rgba(255, 254, 0, 0.5);
 }
 
 #prev-show-2016 {
@@ -557,7 +563,7 @@ html, body {
     background-color: #00A0C6;
     color: #FFFE00;
     overflow: hidden;
-    text-shadow: 0px 3px 10px #FFFE00;
+    text-shadow: 0px 3px 10px rgba(255, 254, 0, 0.5);
 }
 
 #prev-show-2015 {
@@ -565,13 +571,14 @@ html, body {
     background-color: #FFFE00;
     color: #F0037F;
     overflow: hidden;
-    text-shadow: 0px 3px 10px #F0037F;
+    text-shadow: 0px 3px 10px rgba(240, 3, 127, 0.5);
 }
 
 .prev-show-year-heading {
-    font-size: 1.875em;
+    font-size: 40px;
     position: absolute;
     z-index: 1;
+    top: 40%;
 }
 
 .prev-show-year-container {
@@ -678,13 +685,15 @@ html, body {
 
 @media screen and (min-width: 890px) {
     .prev-show-year-heading {
-        font-size: 40px;
+        position: absolute;
+        top: 35%;
     }
 }
 
 @media screen and (min-width: 1350px) {
     .prev-show-year-heading {
         font-size: 50px;
+        top: 27%;
     }
 }
 
@@ -775,6 +784,7 @@ footer {
     padding: 10px;
     color: #00A0C6;
     text-decoration: none;
+    font-size: 18px;
 }
 
 #footer-text-links-container a:hover {
