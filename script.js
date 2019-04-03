@@ -188,6 +188,134 @@ setInterval(function() {
 }, 1000);
 
 
+//dark flicker for the rsvp button
+setInterval(function() {
+    if (stopRsvpFlicker == false) {
+        if (rsvpMagentaCyan == true) {
+            setTimeout(function() {  //dark
+                rsvpButton.style.color = '#382930';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #382930';
+                
+                rsvpButton.style.borderColor = '#242F30';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #242F30';
+            }, 50);
+            
+            setTimeout(function() {  //color
+                rsvpButton.style.color = '#F0037F';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
+                
+                rsvpButton.style.borderColor = '#00A0C6';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
+            }, 100);
+            
+            setTimeout(function() {  //dark
+                rsvpButton.style.color = '#382930';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #382930';
+                
+                rsvpButton.style.borderColor = '#242F30';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #242F30';
+            }, 200);
+            
+            setTimeout(function() {  //color
+                rsvpButton.style.color = '#F0037F';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
+                
+                rsvpButton.style.borderColor = '#00A0C6';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
+            }, 400);
+            
+            setTimeout(function() {  //dark
+                rsvpButton.style.color = '#382930';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #382930';
+                
+                rsvpButton.style.borderColor = '#242F30';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #242F30';
+            }, 600);
+            
+            setTimeout(function() {  //color
+                rsvpButton.style.color = '#F0037F';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
+                
+                rsvpButton.style.borderColor = '#00A0C6';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
+            }, 900);
+        } else {
+            setTimeout(function() {  //dark
+                rsvpButton.style.color = '#242F30';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #242F30';
+                
+                rsvpButton.style.borderColor = '#382930';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #382930';
+            }, 50);
+            
+            setTimeout(function() {  //color
+                rsvpButton.style.color = '#00A0C6';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
+                
+                rsvpButton.style.borderColor = '#F0037F';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
+            }, 100);
+            
+            setTimeout(function() {  //dark
+                rsvpButton.style.color = '#242F30';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #242F30';
+                
+                rsvpButton.style.borderColor = '#382930';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #382930';
+            }, 200);
+            
+            setTimeout(function() {  //color
+                rsvpButton.style.color = '#00A0C6';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
+                
+                rsvpButton.style.borderColor = '#F0037F';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
+            }, 400);
+            
+            setTimeout(function() {  //dark
+                rsvpButton.style.color = '#242F30';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #242F30';
+                
+                rsvpButton.style.borderColor = '#382930';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #382930';
+            }, 600);
+            
+            setTimeout(function() {  //color
+                rsvpButton.style.color = '#00A0C6';
+                
+                rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
+                
+                rsvpButton.style.borderColor = '#F0037F';
+                
+                rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
+            }, 900);
+        }
+    }
+}, 5500);
+
+
 //----------------------------------------
 
 
