@@ -1,3 +1,22 @@
+var landingPage = document.getElementById('landing-page');
+
+var rsvpFlickerSwitch = false;
+
+//document.addEventListener('scroll', function() {
+//    if (rsvpFlickerSwitch == false) {
+//        if (window.pageYOffset > landingPage.clientHeight) {
+//            rsvpFlickerSwitch = true;
+//            stopNavRsvpFlicker = false;
+//        }
+//    } else {
+//        if (window.pageYOffset <= landingPage.clientHeight) {
+//            rsvpFlickerSwitch = false;
+//            stopNavRsvpFlicker = true;
+//        }
+//    }
+//});
+
+
 var landingPageHeading = document.getElementById('landing-page-heading');
 
 var yellowLandingHeading = 'front';
@@ -92,6 +111,134 @@ setInterval(function() {
         };
     }
 }, 1000);
+
+
+//dark flicker for nav rsvp button
+//setInterval(function() {
+//    if (stopNavRsvpFlicker == false) {
+//        if (navRsvpMagentaCyan == true) {
+//            setTimeout(function() {  //dark
+//                navRsvpButton.style.color = '#382930';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #382930';
+//                
+//                navRsvpButton.style.borderColor = '#242F30';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #242F30';
+//            }, 50);
+//            
+//            setTimeout(function() {  //color
+//                navRsvpButton.style.color = '#F0037F';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #F0037F';
+//                
+//                navRsvpButton.style.borderColor = '#00A0C6';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #00A0C6';
+//            }, 100);
+//            
+//            setTimeout(function() {  //dark
+//                navRsvpButton.style.color = '#382930';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #382930';
+//                
+//                navRsvpButton.style.borderColor = '#242F30';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #242F30';
+//            }, 200);
+//            
+//            setTimeout(function() {  //color
+//                navRsvpButton.style.color = '#F0037F';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #F0037F';
+//                
+//                navRsvpButton.style.borderColor = '#00A0C6';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #00A0C6';
+//            }, 400);
+//            
+//            setTimeout(function() {  //dark
+//                navRsvpButton.style.color = '#382930';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #382930';
+//                
+//                navRsvpButton.style.borderColor = '#242F30';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #242F30';
+//            }, 600);
+//            
+//            setTimeout(function() {  //color
+//                navRsvpButton.style.color = '#F0037F';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #F0037F';
+//                
+//                navRsvpButton.style.borderColor = '#00A0C6';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #00A0C6';
+//            }, 900);
+//        } else {
+//            setTimeout(function() {  //dark
+//                navRsvpButton.style.color = '#242F30';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #242F30';
+//                
+//                navRsvpButton.style.borderColor = '#382930';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #382930';
+//            }, 50);
+//            
+//            setTimeout(function() {  //color
+//                navRsvpButton.style.color = '#00A0C6';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #00A0C6';
+//                
+//                navRsvpButton.style.borderColor = '#F0037F';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #F0037F';
+//            }, 100);
+//            
+//            setTimeout(function() {  //dark
+//                navRsvpButton.style.color = '#242F30';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #242F30';
+//                
+//                navRsvpButton.style.borderColor = '#382930';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #382930';
+//            }, 200);
+//            
+//            setTimeout(function() {  //color
+//                navRsvpButton.style.color = '#00A0C6';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #00A0C6';
+//                
+//                navRsvpButton.style.borderColor = '#F0037F';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #F0037F';
+//            }, 400);
+//            
+//            setTimeout(function() {  //dark
+//                navRsvpButton.style.color = '#242F30';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #242F30';
+//                
+//                navRsvpButton.style.borderColor = '#382930';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #382930';
+//            }, 600);
+//            
+//            setTimeout(function() {  //color
+//                navRsvpButton.style.color = '#00A0C6';
+//                
+//                navRsvpButton.style.textShadow = '0px 3px 10px #00A0C6';
+//                
+//                navRsvpButton.style.borderColor = '#F0037F';
+//                
+//                navRsvpButton.style.boxShadow = '0px 2px 20px #F0037F';
+//            }, 900);
+//        }
+//    }
+//}, 5500);
 
 
 //$(document).ready(function() {
