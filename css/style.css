@@ -748,7 +748,7 @@ footer {
     align-items: center;
     padding-top: 20px;
 }
-
+/*
 #footer-social-media-container {
     display: flex;
     justify-content: space-around;
@@ -773,6 +773,30 @@ footer {
 }
 
 .fa:hover {
+    border-color: white;
+    color: white;
+    box-shadow: 0px 3px 10px white;
+    text-shadow: 0px 3px 10px white;
+}
+*/
+
+.icons {
+  margin: 1em 1.2em;
+  height: 1.5em;
+  width: 1.5em;
+  color: #00A0C6;
+}
+
+.fa-icons {
+    color: #F0037F;
+    box-shadow: 0px 3px 10px #F0037F;
+    text-shadow: 0px 3px 10px #F0037F;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.fa-icons:hover {
     border-color: white;
     color: white;
     box-shadow: 0px 3px 10px white;
