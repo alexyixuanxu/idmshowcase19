@@ -217,7 +217,7 @@ html, body {
 
     /* Links inside the dropdown */
     .dropdown-content li a{
-        padding: 15px;
+        padding: 15px 15px 15px 0;
         display: block;
     }
     
