@@ -523,6 +523,12 @@ html, body {
     }
 }
 
+@media screen and (max-width: 430px) {
+    #when-where-text {
+        flex-direction: column;
+    }
+}
+
 
 /*----------------------------*/
 
