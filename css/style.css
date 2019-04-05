@@ -209,7 +209,7 @@ html, body {
     /* Dropdown Content (Hidden by Default) */
     .dropdown-content {
         display: none;
-        background-color: rgb(31, 31, 31, 0.7);
+        background-color: rgb(31, 31, 31);
         margin-top: 250px;
         
         border: 2px solid #00A0C6;
