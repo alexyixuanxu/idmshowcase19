@@ -1,0 +1,44 @@
+.wrapper.fade-up>.inner {
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 1
+}
+
+body.is-loading .wrapper.fade-up>.inner {
+  opacity: 0;
+  transform: translateY(1em)
+}
+
+.sub-menu {
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+@media (max-width:450px) {
+  .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    position: relative;
+    display: block;
+  }
+}

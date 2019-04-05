@@ -9,12 +9,12 @@ html, body {
 
 @font-face {
     font-family: NeonGlow;
-    src: url(neon_glow/neon-glow.otf);
+    src: url(../font/neon_glow/neon-glow.otf);
 }
 
 @font-face {
     font-family: NeonGlowLight;
-    src: url(neon_glow/neon-glow-light.otf);
+    src: url(../font/neon_glow/neon-glow-light.otf);
 }
 
 .neon-glow-light-font {
@@ -23,7 +23,7 @@ html, body {
 
 @font-face {
     font-family: AllRoundGothicBook;
-    src: url(DTK-Font-All-Round-Gothic/flat-it-all-round-gothic-book.otf);
+    src: url(../font/DTK-Font-All-Round-Gothic/flat-it-all-round-gothic-book.otf);
 }
 
 .all-round-gothic-book-font {
