@@ -180,6 +180,7 @@ html, body {
     #main-nav-dropdown {
         display: inline-block;
         float: right;
+        padding: 15px;
     }
 
     /* Dropdown Button */
@@ -210,6 +211,8 @@ html, body {
         display: none;
         background-color: rgb(31, 31, 31, 0.7);
         margin-top: 250px;
+        
+        border: 2px solid #00A0C6;
     }
 
     /* Links inside the dropdown */
