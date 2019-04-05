@@ -274,7 +274,7 @@ html, body {
 
 
 #about {
-    padding-top: 100px;
+    padding-top: 70px;
 /*    padding-bottom: 7px;*/
     background-color: #353535;
 }
@@ -333,7 +333,7 @@ html, body {
 
 .category {
     width: 25%;
-    padding: 7% 0;
+    padding: 4% 0;
     display: flex;
     justify-content: center;
     align-items: center;
