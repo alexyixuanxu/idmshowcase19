@@ -504,7 +504,7 @@ prevShow2018Link.addEventListener('mouseout', function() {
     img2018.src = 'images/2018-showcase-picture.png';
     
     heading2018.style.color = '#F0037F';
-    heading2018.style.textShadow = '0px 3px 10px rgba(0, 160, 198, 0.5)';
+    heading2018.style.textShadow = '0px 3px 10px rgba(240, 3, 127, 0.5)';
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
@@ -546,5 +546,5 @@ prevShow2015Link.addEventListener('mouseout', function() {
     img2015.src = 'images/2015-showcase-picture.jpg';
     
     heading2015.style.color = '#00A0C6';
-    heading2015.style.textShadow = '0px 3px 10px rgba(240, 3, 127, 0.5)';
+    heading2015.style.textShadow = '0px 3px 10px rgba(0, 160, 198, 0.5)';
 });
