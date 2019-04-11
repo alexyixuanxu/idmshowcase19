@@ -134,3 +134,23 @@ img{
 	position:static;
 	display:block;
 }
+
+
+
+@font-face {
+    font-family: NeonGlowLight;
+    src: url(../font/neon_glow/neon-glow-light.otf);
+}
+
+.neon-glow-light-font {
+    font-family: NeonGlowLight;
+}
+
+@font-face {
+    font-family: AllRoundGothicBook;
+    src: url(../font/DTK-Font-All-Round-Gothic/flat-it-all-round-gothic-book.otf);
+}
+
+.all-round-gothic-book-font {
+    font-family: AllRoundGothicBook;
+}
