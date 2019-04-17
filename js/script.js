@@ -63,25 +63,25 @@ var navRsvpMagentaCyan = true;
 
 navRsvpButton.addEventListener('mouseover', function() {
     stopNavRsvpFlicker = true;
-    
+
     navRsvpButtonText.style.color = 'white';
-    
+
     navRsvpButtonText.style.textShadow = '0px 3px 10px white';
-    
+
     navRsvpButtonText.style.borderColor = 'white';
-    
+
     navRsvpButtonText.style.boxShadow = '0px 2px 20px white';
 });
 
 navRsvpButton.addEventListener('mouseout', function() {
     stopNavRsvpFlicker = false;
-    
+
     navRsvpButtonText.style.color = '#00A0C6';
-            
+
     navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
-            
+
     navRsvpButtonText.style.borderColor = '#F0037F';
-            
+
     navRsvpButtonText.style.boxShadow = '0px 2px 20px #F0037F';
 });
 
@@ -90,23 +90,23 @@ setInterval(function() {
     if (stopNavRsvpFlicker == false) {
         if (navRsvpMagentaCyan == true) {
             navRsvpButtonText.style.color = '#F0037F';
-            
+
             navRsvpButtonText.style.textShadow = '0px 3px 10px #F0037F';
-            
+
             navRsvpButtonText.style.borderColor = '#00A0C6';
-            
+
             navRsvpButtonText.style.boxShadow = '0px 2px 20px #00A0C6';
-            
+
             navRsvpMagentaCyan = false;
         } else {
             navRsvpButtonText.style.color = '#00A0C6';
-            
+
             navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
-            
+
             navRsvpButtonText.style.borderColor = '#F0037F';
-            
+
             navRsvpButtonText.style.boxShadow = '0px 2px 20px #F0037F';
-            
+
             navRsvpMagentaCyan = true;
         };
     }
@@ -119,121 +119,121 @@ setInterval(function() {
 //        if (navRsvpMagentaCyan == true) {
 //            setTimeout(function() {  //dark
 //                navRsvpButton.style.color = '#382930';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #382930';
-//                
+//
 //                navRsvpButton.style.borderColor = '#242F30';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #242F30';
 //            }, 50);
-//            
+//
 //            setTimeout(function() {  //color
 //                navRsvpButton.style.color = '#F0037F';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #F0037F';
-//                
+//
 //                navRsvpButton.style.borderColor = '#00A0C6';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #00A0C6';
 //            }, 100);
-//            
+//
 //            setTimeout(function() {  //dark
 //                navRsvpButton.style.color = '#382930';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #382930';
-//                
+//
 //                navRsvpButton.style.borderColor = '#242F30';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #242F30';
 //            }, 200);
-//            
+//
 //            setTimeout(function() {  //color
 //                navRsvpButton.style.color = '#F0037F';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #F0037F';
-//                
+//
 //                navRsvpButton.style.borderColor = '#00A0C6';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #00A0C6';
 //            }, 400);
-//            
+//
 //            setTimeout(function() {  //dark
 //                navRsvpButton.style.color = '#382930';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #382930';
-//                
+//
 //                navRsvpButton.style.borderColor = '#242F30';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #242F30';
 //            }, 600);
-//            
+//
 //            setTimeout(function() {  //color
 //                navRsvpButton.style.color = '#F0037F';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #F0037F';
-//                
+//
 //                navRsvpButton.style.borderColor = '#00A0C6';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #00A0C6';
 //            }, 900);
 //        } else {
 //            setTimeout(function() {  //dark
 //                navRsvpButton.style.color = '#242F30';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #242F30';
-//                
+//
 //                navRsvpButton.style.borderColor = '#382930';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #382930';
 //            }, 50);
-//            
+//
 //            setTimeout(function() {  //color
 //                navRsvpButton.style.color = '#00A0C6';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #00A0C6';
-//                
+//
 //                navRsvpButton.style.borderColor = '#F0037F';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #F0037F';
 //            }, 100);
-//            
+//
 //            setTimeout(function() {  //dark
 //                navRsvpButton.style.color = '#242F30';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #242F30';
-//                
+//
 //                navRsvpButton.style.borderColor = '#382930';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #382930';
 //            }, 200);
-//            
+//
 //            setTimeout(function() {  //color
 //                navRsvpButton.style.color = '#00A0C6';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #00A0C6';
-//                
+//
 //                navRsvpButton.style.borderColor = '#F0037F';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #F0037F';
 //            }, 400);
-//            
+//
 //            setTimeout(function() {  //dark
 //                navRsvpButton.style.color = '#242F30';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #242F30';
-//                
+//
 //                navRsvpButton.style.borderColor = '#382930';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #382930';
 //            }, 600);
-//            
+//
 //            setTimeout(function() {  //color
 //                navRsvpButton.style.color = '#00A0C6';
-//                
+//
 //                navRsvpButton.style.textShadow = '0px 3px 10px #00A0C6';
-//                
+//
 //                navRsvpButton.style.borderColor = '#F0037F';
-//                
+//
 //                navRsvpButton.style.boxShadow = '0px 2px 20px #F0037F';
 //            }, 900);
 //        }
@@ -285,25 +285,25 @@ var rsvpMagentaCyan = true;
 
 rsvpButton.addEventListener('mouseover', function() {
     stopRsvpFlicker = true;
-    
+
     rsvpButton.style.color = 'white';
-    
+
     rsvpButton.style.textShadow = '0px 8px 20px white';
-    
+
     rsvpButton.style.borderColor = 'white';
-    
+
     rsvpButton.style.boxShadow = '0px 7px 20px white';
 });
 
 rsvpButton.addEventListener('mouseout', function() {
     stopRsvpFlicker = false;
-    
+
     rsvpButton.style.color = '#00A0C6';
-            
+
     rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
-            
+
     rsvpButton.style.borderColor = '#F0037F';
-            
+
     rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
 });
 
@@ -312,23 +312,23 @@ setInterval(function() {
     if (stopRsvpFlicker == false) {
         if (rsvpMagentaCyan == true) {
             rsvpButton.style.color = '#F0037F';
-            
+
             rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
-            
+
             rsvpButton.style.borderColor = '#00A0C6';
-            
+
             rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
-            
+
             rsvpMagentaCyan = false;
         } else {
             rsvpButton.style.color = '#00A0C6';
-            
+
             rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
-            
+
             rsvpButton.style.borderColor = '#F0037F';
-            
+
             rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
-            
+
             rsvpMagentaCyan = true;
         }
     }
@@ -341,121 +341,121 @@ setInterval(function() {
         if (rsvpMagentaCyan == true) {
             setTimeout(function() {  //dark
                 rsvpButton.style.color = '#382930';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #382930';
-                
+
                 rsvpButton.style.borderColor = '#242F30';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #242F30';
             }, 50);
-            
+
             setTimeout(function() {  //color
                 rsvpButton.style.color = '#F0037F';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
-                
+
                 rsvpButton.style.borderColor = '#00A0C6';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
             }, 100);
-            
+
             setTimeout(function() {  //dark
                 rsvpButton.style.color = '#382930';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #382930';
-                
+
                 rsvpButton.style.borderColor = '#242F30';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #242F30';
             }, 200);
-            
+
             setTimeout(function() {  //color
                 rsvpButton.style.color = '#F0037F';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
-                
+
                 rsvpButton.style.borderColor = '#00A0C6';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
             }, 400);
-            
+
             setTimeout(function() {  //dark
                 rsvpButton.style.color = '#382930';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #382930';
-                
+
                 rsvpButton.style.borderColor = '#242F30';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #242F30';
             }, 600);
-            
+
             setTimeout(function() {  //color
                 rsvpButton.style.color = '#F0037F';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #F0037F';
-                
+
                 rsvpButton.style.borderColor = '#00A0C6';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #00A0C6';
             }, 900);
         } else {
             setTimeout(function() {  //dark
                 rsvpButton.style.color = '#242F30';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #242F30';
-                
+
                 rsvpButton.style.borderColor = '#382930';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #382930';
             }, 50);
-            
+
             setTimeout(function() {  //color
                 rsvpButton.style.color = '#00A0C6';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
-                
+
                 rsvpButton.style.borderColor = '#F0037F';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
             }, 100);
-            
+
             setTimeout(function() {  //dark
                 rsvpButton.style.color = '#242F30';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #242F30';
-                
+
                 rsvpButton.style.borderColor = '#382930';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #382930';
             }, 200);
-            
+
             setTimeout(function() {  //color
                 rsvpButton.style.color = '#00A0C6';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
-                
+
                 rsvpButton.style.borderColor = '#F0037F';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
             }, 400);
-            
+
             setTimeout(function() {  //dark
                 rsvpButton.style.color = '#242F30';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #242F30';
-                
+
                 rsvpButton.style.borderColor = '#382930';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #382930';
             }, 600);
-            
+
             setTimeout(function() {  //color
                 rsvpButton.style.color = '#00A0C6';
-                
+
                 rsvpButton.style.textShadow = '0px 8px 20px #00A0C6';
-                
+
                 rsvpButton.style.borderColor = '#F0037F';
-                
+
                 rsvpButton.style.boxShadow = '0px 7px 20px #F0037F';
             }, 900);
         }
@@ -495,56 +495,57 @@ var heading2015 = document.getElementById('heading-2015');
 
 prevShow2018Link.addEventListener('mouseover', function() {
     img2018.src = 'images/2018-showcase-gif.gif';
-    
+
     heading2018.style.color = 'white';
     heading2018.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2018Link.addEventListener('mouseout', function() {
     img2018.src = 'images/2018-showcase-picture.png';
-    
+
     heading2018.style.color = '#F0037F';
     heading2018.style.textShadow = '0px 3px 10px rgba(240, 3, 127, 0.5)';
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
     img2017.src = 'images/2017-showcase-gif.gif';
-    
+
     heading2017.style.color = 'white';
     heading2017.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2017Link.addEventListener('mouseout', function() {
     img2017.src = 'images/2017-showcase-picture.jpg';
-    
+
     heading2017.style.color = '#FFFE00';
     heading2017.style.textShadow = '0px 3px 10px rgba(255, 254, 0, 0.5)';
 });
 
 prevShow2016Link.addEventListener('mouseover', function() {
     img2016.src = 'images/2016-showcase-gif.gif';
-    
+
     heading2016.style.color = 'white';
     heading2016.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2016Link.addEventListener('mouseout', function() {
     img2016.src = 'images/2016-showcase-picture.jpg';
-    
+
     heading2016.style.color = '#FFFE00';
     heading2016.style.textShadow = '0px 3px 10px rgba(255, 254, 0, 0.5)'
 });
 
 prevShow2015Link.addEventListener('mouseover', function() {
-    img2015.src = 'images/2015-showcase-gif.gif';
-    
+    // img2015.src = 'images/2015-showcase-gif.gif';
+    img2015.src = 'https://drive.google.com/uc?id=1WYVj4BX8Ex5IREQpJZyDbNHtI8lPDi_u'
+
     heading2015.style.color = 'white';
     heading2015.style.textShadow = '0px 3px 10px white';
 });
 
 prevShow2015Link.addEventListener('mouseout', function() {
     img2015.src = 'images/2015-showcase-picture.jpg';
-    
+
     heading2015.style.color = '#00A0C6';
     heading2015.style.textShadow = '0px 3px 10px rgba(0, 160, 198, 0.5)';
 });
