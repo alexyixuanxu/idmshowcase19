@@ -523,7 +523,7 @@ prevShow2017Link.addEventListener('mouseout', function() {
 
 prevShow2016Link.addEventListener('mouseover', function() {
     // img2016.src = 'images/2016-showcase-gif.gif';
-    img2016.src = 'https://drive.google.com/open?id=1BiOXJCjyL6grF33YOa21SrfmVB5uQEl3';
+    img2016.src = 'http://sites.bxmc.poly.edu/~ifeoluwalawal/gifsFor2019ShowSite/2016-showcase-gif.gif';
 
 
     heading2016.style.color = 'white';
@@ -539,7 +539,7 @@ prevShow2016Link.addEventListener('mouseout', function() {
 
 prevShow2015Link.addEventListener('mouseover', function() {
     // img2015.src = 'images/2015-showcase-gif.gif';
-    img2015.src = 'https://drive.google.com/uc?id=1WYVj4BX8Ex5IREQpJZyDbNHtI8lPDi_u'
+    img2015.src = 'http://sites.bxmc.poly.edu/~ifeoluwalawal/gifsFor2019ShowSite/2015-showcase-gif.gif';
 
     heading2015.style.color = 'white';
     heading2015.style.textShadow = '0px 3px 10px white';
