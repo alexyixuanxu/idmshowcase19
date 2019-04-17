@@ -522,7 +522,9 @@ prevShow2017Link.addEventListener('mouseout', function() {
 });
 
 prevShow2016Link.addEventListener('mouseover', function() {
-    img2016.src = 'images/2016-showcase-gif.gif';
+    // img2016.src = 'images/2016-showcase-gif.gif';
+    img2016.src = 'https://drive.google.com/open?id=1BiOXJCjyL6grF33YOa21SrfmVB5uQEl3';
+
 
     heading2016.style.color = 'white';
     heading2016.style.textShadow = '0px 3px 10px white';
