@@ -9,34 +9,107 @@ body.is-loading .wrapper.fade-up>.inner {
   transform: translateY(1em)
 }
 
-.sub-menu {
-  visibility: hidden; /* hides sub-menu */
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 10%;
-  width: 100%;
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-}
-
-.sub-menu-parent:focus .sub-menu,
-.sub-menu-parent:focus-within .sub-menu,
-.sub-menu-parent:hover .sub-menu {
-  visibility: visible; /* shows sub-menu */
-  opacity: 1;
-  z-index: 1;
+.show-more {
+  font-weight: 700;
+  line-height: 1.5;
+  padding: -.2em 0;
+  font-size: 1.1em;
   position: relative;
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  text-align: center;
+  z-index: 1
 }
 
-@media (max-width:450px) {
+.show-more i {
+  position: static;
+  height: 40px;
+  width: 40px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+.show-more i:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  right: 0;
+  background: linear-gradient(90deg, #fff, #b74e91);
+  transition: max-width .2s ease;
+  border-radius: .2em;
+  bottom: 0;
+  height: .05em;
+  z-index: -1
+}
+
+.show-more.active i:after {
+  background: #000285;
+  transition: .4s
+}
+
+.popover {
+  background: #000285;
+  display: none;
+  border-radius: .25em;
+  font-family: Courier New, monospace;
+  font-size: .9em;
+  margin: 0 .25em .5em;
+  padding: 1em;
+  position: relative;
+  z-index: 5
+}
+
+.popover .popover-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.popover .popover-inner>div {
+  width: 50%;
+  padding: 0 1em
+}
+
+.mega {
+  font-size: 4em;
+  line-height: 1em;
+  text-shadow: 0 1px 15px #000285
+}
+
+.jumbotron {
+  background: hsla(0, 0%, 100%, .05);
+  padding: 2.5em;
+  margin: 2em auto;
+  min-height: 400px
+}
+
+@media screen and (max-width:736px) {
+  .popover .popover-inner>div {
+    width: 100%
+  }
+}
+
+.popover.active {
+  height: 100%
+}
+
+@media (max-width:1024px) {
   .sub-menu {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 1;
+    width: 99%;
+    margin: auto;
+    line-height: 10px;
+    margin-bottom: 10px;
     transform: translateY(0%);
     position: relative;
     display: block;

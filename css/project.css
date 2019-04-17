@@ -3,6 +3,21 @@
   src: url("../font/NEON GLOW.otf");
 }
 
+@font-face {
+  font-family: neonFont;
+  src: url("../font/NEON GLOW-Light.otf");
+}
+
+@font-face {
+  font-family: commonFont;
+  src: url("../font/Flat-it - All Round Gothic Book.otf");
+}
+
+@font-face {
+  font-family: commonFontBold;
+  src: url("../font/DTK Font Flat-it - All Round Gothic Bold.otf");
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -10,13 +25,14 @@ img {
 }
 
 html {
-  // background-color: rgba(0,160,198,.5);
+  /* background-color: rgba(0,160,198,.5); */
   background-color: #202020;
+  font-family: commonFont;
 }
 
 html, body {
   height: 100%;
-  // width: 99.9%;
+  /* width: 99.9%; */
   color: white;
 
 }
@@ -67,13 +83,19 @@ aside h1 {
 
 footer {
   margin-bottom: 40px;
+  font-size: 30px;
+  font-family: commonFont;
+  text-align: center;
+  color: white;
 }
-
-
 
 #face {
   max-width: 500px;
   margin: auto;
+}
+
+#face ~ ul {
+  margin-top: 10px;
 }
 
 #imageGal {
@@ -85,7 +107,7 @@ footer {
 #main-nav {
     /* background-color: #1F1F1F; */
     width: 100%;
-    padding-top: 20px;
+    padding-top: 30px;
     z-index: 2;
     display: flex;
     justify-content: space-between;
@@ -144,15 +166,75 @@ footer {
 
 #footer-divider {
     background-color: #FFFE00;
-    width: 30%;
+    width: 50%;
     margin: auto;
     margin-bottom: 20px;
     height: 2px;
     box-shadow: 0px 2px 10px #FFFE00;
+    font-family: neonFont;
+}
+
+#footer-text-links-container {
+    padding-top: 20px;
+}
+
+#footer-text-links-container a {
+    padding: 10px;
+    color: #00A0C6;
+    text-decoration: none;
+}
+
+#footer-text-links-container a:hover {
+    color: white;
 }
 
 #main {
   font-family: "Roboto";
+}
+
+#projectNav {
+  box-shadow: 0px 1px 10px white;
+  border-style: dotted;
+  padding: 20px;
+}
+
+#prev {
+  flex:1 0 10em;
+}
+
+#prev a:hover, #all a:hover, #next a:hover{
+  color: white;
+  border-color: white;
+  /* box-shadow: 0px 3px 10px white;
+   text-shadow: 0px 3px 10px white; */
+}
+
+#prev a:hover> .icons, #next a:hover> .icons {
+  color: white;
+  border-color: white;
+  box-shadow: 0px 3px 10px white;
+  text-shadow: 0px 3px 10px white;
+}
+
+#allProjects {
+  flex:1 0 10em;
+  text-align: center;
+  margin-left: 65px;
+  /* padding-top: 5px; */
+}
+
+#next {
+  flex: 1 0 10em;
+  text-align: right;
+}
+
+#particles-js {
+  z-index: -1;
+}
+
+
+.my-shuffle-container {
+  overflow: visible;
 }
 
 .btn {
@@ -175,11 +257,15 @@ footer {
   text-decoration: none
 }
 
+.btn-group {
+  margin-bottom: 30px;
+}
+
 .filter-label {
   color: #95a5a6;
   display: block;
-  margin-bottom: 6px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
   font-size: 1.5em;
   text-shadow: 0px 1px 10px #00A0C6;
 }
@@ -189,6 +275,22 @@ footer {
   height: 1.5em;
   width: 1.5em;
   color: #00A0C6;
+}
+
+.icons {
+    color: #F0037F;
+    box-shadow: 0px 3px 10px #F0037F;
+    text-shadow: 0px 3px 10px #F0037F;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.icons:hover {
+    border-color: white;
+    color: white;
+    box-shadow: 0px 3px 10px white;
+    text-shadow: 0px 3px 10px white;
 }
 
 .fa-icons {
@@ -217,6 +319,27 @@ footer {
 
 .header {
   margin:1.8rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: commonFontBold;
+}
+
+.header .icons {
+  /* vertical-align: middle; */
+  margin: -10px;
+  margin-bottom: -12px;
+}
+
+.header .icons:first-child {
+  margin-right: 15px;
+  margin-bottom: -5px;
+}
+
+.header .icons:last-child {
+  margin-left: 15px;
+
 }
 
 .holyGrail-body {
@@ -245,7 +368,7 @@ footer {
 }
 
 .holyGrail-ads {
-  flex: 0 0 10em;
+  flex: 0 0 15em;
   border-bottom: 2px;
   background-color: hsla(31,15%,50%,.1);
   padding: 0 1.2em;
@@ -262,6 +385,13 @@ footer {
 	height: 0;
 }
 .videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.videoWrapper video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -295,7 +425,7 @@ h3::after {
 
 h3 {
   margin-top: 20px;
-  font-family: myFirstFont
+  font-family: neonFont
 }
 
 h2::after {
@@ -310,11 +440,11 @@ h2::after {
 
 h2 {
   margin-top: 20px;
-  font-family: myFirstFont
+  font-family: neonFont
 }
 
 h1 {
-  font-family: myFirstFont
+  font-family: neonFont
 }
 
 .holyGrail-nav h1 {
@@ -329,13 +459,9 @@ h1 {
   margin-bottom: 5px;
 }
 
-footer {
-  text-align: center;
-  font-family: myFirstFont;
-}
-
 div {
   line-height: 28px;
+  overflow: visible;
 }
 
 .textfield {
@@ -355,16 +481,42 @@ div {
   width: 8.33333%;
 }
 
+
+
 .card-body {
   padding: 1em .1em;
 }
 
 .card-body div {
   text-align: left;
-  color: #00A0C6;
+  color: #fff;
   font-size: 1.5em;
   text-shadow: 0px 1px 10px #00A0C6;
 }
+
+.sub-menu {
+  padding: 20px;
+  background-color: black;
+  visibility: hidden; /* hides sub-menu */
+  opacity: 1;
+  position: absolute;
+  width: 92%;
+  transform: translateY(-10px);
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+/* // @media */
 
 @media screen and (min-width:768px) {
   .filters-group-wrap {
@@ -394,6 +546,16 @@ div {
     margin-top: 1.3em;
     padding-bottom: 30px;
   }
+  #allProjects {
+    margin-left: 0;
+  }
+  #prev, #next {
+    visibility: hidden;
+    display: none;
+  }
+  h1 {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -411,6 +573,10 @@ div {
   }
   .card-body div {
     font-size: 1.8em;
+  }
+
+  #prev a, #next a {
+    display: none
   }
 
 }

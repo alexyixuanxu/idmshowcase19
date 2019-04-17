@@ -1021,8 +1021,8 @@
         } // Overflow has to be hidden.
 
 
-        if (styles.overflow !== 'hidden') {
-          this.element.style.overflow = 'hidden';
+        if (styles.overflow !== 'visible') {
+          this.element.style.overflow = 'visible';
         }
       }
       /**

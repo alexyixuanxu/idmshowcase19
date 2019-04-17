@@ -1,6 +1,9 @@
 var Shuffle = window.Shuffle;
 var element = document.querySelector('.my-shuffle-container');
 var sizer = element.querySelector('.my-sizer-element');
+var main = document.querySelector('main');
+
+// main.
 
 var shuffleInstance = new Shuffle(element, {
   itemSelector: '.grid__brick',
@@ -20,11 +23,22 @@ $("#btn-installation").on("click", function(){
 $("#btn-VRAR").on("click", function(){
    shuffleInstance.filter('VR/AR');
 });
+$("#btn-ID").on("click", function(){
+   shuffleInstance.filter('Interactive Design');
+});
+$("#btn-Perf").on("click", function(){
+   shuffleInstance.filter('Performance');
+});
+$("#btn-UX").on("click", function(){
+   shuffleInstance.filter('UX/UI/App');
+});
 $("#random").on("click", function() {
   shuffleInstance.sort({randomize:true})
 });
 setTimeout(function() {shuffleInstance.sort({randomize:true})}, 1000)
 // setTimeout(function() {shuffleInstance.sort({randomize:false})}, 1500)
+
+
 
 
 var Demo = function (element) {
