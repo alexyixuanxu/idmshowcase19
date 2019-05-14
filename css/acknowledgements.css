@@ -1,18 +1,63 @@
+@font-face {
+    font-family: NeonGlowLight;
+    src: url(../font/neon_glow/neon-glow-light.otf);
+}
+.neon-glow-light-font {
+    font-family: NeonGlowLight;
+}
+@font-face {
+    font-family: AllRoundGothicBook;
+    src: url(../font/DTK-Font-All-Round-Gothic/flat-it-all-round-gothic-book.otf);
+}
+.all-round-gothic-book-font {
+    font-family: AllRoundGothicBook;
+}
+
 body{
 	background-color:#1F1F1F;
 }
 main{
 	display:grid;
 	grid-template-columns: repeat(5,20%);
-	grid-template-rows: 2fr;	
+	grid-template-rows: 2fr;
 }
+#main-nav {
+  background-color: #1F1F1F;
+  width: 100%;
+  padding: 10px 0 25px 0;
+/*
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  overflow: visible;
+/* display: none;*/
+}
+
+#main-nav-logo-container {
+    width: 120px;
+    display: inline-block;
+}
+
+#title{
+	color:#FFFE00;
+  text-shadow: 0px 2px 25px;
+  text-align: center;
+	margin: auto;
+	font-size: 34px;
+}
+
 ul{
 	list-style: none;
 }
 
-img{
-	grid-row: 2;
-	grid-column: 1/4;
+#showcase-logo{
 	margin:20px;
 	padding:10px;
 	width: 94%;
@@ -20,8 +65,8 @@ img{
 
 .header{
 	color: #00A0C6;
-    text-shadow: 0px 2px 20px;
-    text-align: center;
+  text-shadow: 0px 2px 20px;
+  text-align: center;
 }
 
 .names{
@@ -33,67 +78,12 @@ img{
 }
 
 .groups{
-	margin:20px;
-	padding:10px;
-/*	flex: 1;*/
-    box-shadow: 0px 2px 15px #F0037F;
-/*    width: 250px;*/
-}
-
-@media screen and (max-width: 1600px) {
-    .groups {
-/*        width: 200px;*/
-/*        margin: 20px 50px;*/
-    }
-    
-    #curation {
-/*        min-width: 31%;*/
-/*        margin: 20px 20px 20px 100px;*/
-    }
-    
-    #special_thanks {
-/*        min-width: 31%;*/
-/*        margin: 20px 100px 20px 20px;*/
-    }
-}
-
-@media screen and (max-width: 900px) {
-    #website, #exhibit {
-/*
-        min-width: 30%;
-        margin: 20px;
-*/
-    }
-    
-    #graphic_design, #curation {
-/*
-        min-width: 30%;
-        margin: 20px;
-*/
-    }
-    
-    #special_thanks {
-/*
-        min-width: 30%;
-        margin: 20px 150px;
-*/
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #website, #graphic_design, #exhibit, #curation, #special_thanks {
-/*
-        min-width: 80%;
-        margin: 20px;
-*/
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .groups {
-/*        width: 500px;*/
-        width: 100%;
-    }
+	box-shadow: 0px 2px 15px #F0037F;
+	width: 250px;
+	height: 250px;
+	margin: 15px auto;
+	border: #F0037F solid 2px;
+	border-radius:30px;
 }
 
 #main {
@@ -102,121 +92,11 @@ img{
 	flex-flow: wrap;
 }
 
-#blurb {
-	width: 100%;
-	flex-grow: 4em;
-	text-align: center;
+#faces{
+	width: 99%;
+	height: auto;
+	margin: 20px auto;
 }
-
-#workImage {
-	width: 100%;
-	text-align: center;
-}
-
-#website{
-	grid-row:1;
-	grid-column:1;
-	border: #F0037F solid 2px;
-	border-radius:30px;
-}
-
-#curation{
-	grid-row:1;
-	grid-column:2;
-	border: #F0037F solid 2px;
-	border-radius:30px;
-}
-
-#exhibit{
-	grid-row:1;
-	grid-column:3;
-	border: #F0037F solid 2px;
-	border-radius:30px;
-}
-
-#special_thanks{
-	grid-row:1;
-	grid-column:4;
-	border: #F0037F solid 2px;
-	border-radius:30px;
-}
-
-#graphic_design{
-	grid-row:1;
-	grid-column:5;
-	border: #F0037F solid 2px;
-	border-radius:30px;
-}
-
-#title{
-	color:#FFFE00;
-    text-shadow: 0px 2px 25px;
-    text-align: center;
-}
-
-.groupImage{
-	position:absolute;
-	display:inline;
-
-}
-
-#graphicImg{
-	visibility:hidden;
-}
-#exhibitImg{
-	visibility:hidden;
-}
-#curationImg{
-	visibility:hidden;
-}
-#websiteImg{
-	visibility:hidden;
-}
-
-#website:hover ~ #websiteImg{
-	visibility: visible;
-	position:static;
-	display:block;
-}
-
-#exhibit:hover ~ #exhibitImg{
-	visibility: visible;
-	position:static;
-	display:block;
-}
-
-#curation:hover ~ #curationImg{
-	visibility: visible;
-	position:static;
-	display:block;
-}
-
-#graphic-design:hover ~ #graphicImg{
-	visibility: visible;
-	position:static;
-	display:block;
-}
-
-
-
-@font-face {
-    font-family: NeonGlowLight;
-    src: url(../font/neon_glow/neon-glow-light.otf);
-}
-
-.neon-glow-light-font {
-    font-family: NeonGlowLight;
-}
-
-@font-face {
-    font-family: AllRoundGothicBook;
-    src: url(../font/DTK-Font-All-Round-Gothic/flat-it-all-round-gothic-book.otf);
-}
-
-.all-round-gothic-book-font {
-    font-family: AllRoundGothicBook;
-}
-
 
 footer {
     width: 100%;
@@ -239,7 +119,6 @@ footer {
 }
 
 .icons {
-/*    margin: 1em 1.2em;*/
     height: 1.5em;
     width: 1.5em;
     color: #00A0C6;
@@ -282,29 +161,4 @@ footer {
 
 #footer-text-links-container a:hover {
     color: white;
-}
-
-
-#main-nav {
-    background-color: #1F1F1F;
-    width: 100%;
-    padding: 10px 0 25px 0;
-/*
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    height: 60px;
-    overflow: visible;
-/*    display: none;*/
-}
-
-#main-nav-logo-container {
-    width: 120px;
-    display: inline-block;
 }
