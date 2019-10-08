@@ -29,13 +29,13 @@
 # Acknowledgements 
 
 ## Web Developers
-- Alex Yuxian - project manager for all pages
-- Shirley Chin - landing page
-- Ifeoluwa Lawal - projects page
-- Clara Gilligan - acknowledgements page
+- [Alex Yuxian](https://ayxx.me/project-type/projects/) - project manager for all pages
+- [Shirley Chin]() - landing page
+- [Ifeoluwa Lawal](https://ifelawal.com/) - projects page
+- [Clara Gilligan](https://www.claragilligan.com/) - acknowledgements page
 
 ## Web Designers
-- Sara Nejad - landing page
-- Clara Gilligan - acknowledgements page
-- Ifeoluwa Lawal - projects page
+- [Sara Nejad](http://www.saranejad.design/#home-section) - landing page
+- [Clara Gilligan](https://www.claragilligan.com/) - acknowledgements page
+- [Ifeoluwa Lawal](https://ifelawal.com/) - projects page
 
