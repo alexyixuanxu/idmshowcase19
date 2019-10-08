@@ -1,5 +1,6 @@
 var landingPage = document.getElementById('landing-page');
 
+
 var rsvpFlickerSwitch = false;
 
 //document.addEventListener('scroll', function() {
@@ -39,8 +40,31 @@ setInterval(function() {
 }, 1000);
 
 
+
 //----------------------------------------
 
+var landingPageHeading2 = document.getElementsByClassName('flash')[0];
+
+var yellowLandingHeading2 = 'front';
+
+//color flicker for landing page heading
+setInterval(function() {
+    if (yellowLandingHeading2 == 'front') {
+        landingPageHeading2.style.color = '#00A0C6';
+        landingPageHeading2.style.textShadow = '0px 3px 20px #00A0C6, -10px -10px #FFFE00, -10px -7px 20px #FFFE00, -20px -20px #F0037F, -20px -17px 20px #F0037F';
+        yellowLandingHeading2 = 'middle';
+    } else if (yellowLandingHeading2 == 'middle') {
+        landingPageHeading2.style.color = '#F0037F';
+        landingPageHeading2.style.textShadow = '0px 3px 20px #00A0C6, -10px -10px #00A0C6, -10px -7px 20px #00A0C6, -20px -20px #FFFE00, -20px -17px 20px #FFFE00';
+        yellowLandingHeading2 = 'back';
+    } else {
+        landingPageHeading2.style.color = '#FFFE00';
+        landingPageHeading2.style.textShadow = '0px 3px 20px #FFFE00, -10px -10px #F0037F, -10px -7px 20px #F0037F, -20px -20px #00A0C6, -20px -17px 20px #00A0C6';
+        yellowLandingHeading2 = 'front';
+    }
+}, 1000);
+
+//----------------------------------------
 
 var showcaseLogo = document.getElementById('showcase-logo');
 
@@ -53,7 +77,7 @@ showcaseLogo.addEventListener('mouseout', function() {
 });
 
 
-var navRsvpButton = document.getElementById('nav-rsvp-button');
+// var navRsvpButton = document.getElementById('nav-rsvp-button');
 
 var navRsvpButtonText = document.getElementById('nav-rsvp-button-text');
 
@@ -61,29 +85,29 @@ var stopNavRsvpFlicker = false;
 
 var navRsvpMagentaCyan = true;
 
-navRsvpButton.addEventListener('mouseover', function() {
-    stopNavRsvpFlicker = true;
-
-    navRsvpButtonText.style.color = 'white';
-
-    navRsvpButtonText.style.textShadow = '0px 3px 10px white';
-
-    navRsvpButtonText.style.borderColor = 'white';
-
-    navRsvpButtonText.style.boxShadow = '0px 2px 20px white';
-});
-
-navRsvpButton.addEventListener('mouseout', function() {
-    stopNavRsvpFlicker = false;
-
-    navRsvpButtonText.style.color = '#00A0C6';
-
-    navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
-
-    navRsvpButtonText.style.borderColor = '#F0037F';
-
-    navRsvpButtonText.style.boxShadow = '0px 2px 20px #F0037F';
-});
+// navRsvpButton.addEventListener('mouseover', function() {
+//     stopNavRsvpFlicker = true;
+//
+//     navRsvpButtonText.style.color = 'white';
+//
+//     navRsvpButtonText.style.textShadow = '0px 3px 10px white';
+//
+//     navRsvpButtonText.style.borderColor = 'white';
+//
+//     navRsvpButtonText.style.boxShadow = '0px 2px 20px white';
+// });
+//
+// navRsvpButton.addEventListener('mouseout', function() {
+//     stopNavRsvpFlicker = false;
+//
+//     navRsvpButtonText.style.color = '#00A0C6';
+//
+//     navRsvpButtonText.style.textShadow = '0px 3px 10px #00A0C6';
+//
+//     navRsvpButtonText.style.borderColor = '#F0037F';
+//
+//     navRsvpButtonText.style.boxShadow = '0px 2px 20px #F0037F';
+// });
 
 //color flicker for the nav rsvp button
 setInterval(function() {
@@ -508,7 +532,8 @@ prevShow2018Link.addEventListener('mouseout', function() {
 });
 
 prevShow2017Link.addEventListener('mouseover', function() {
-    img2017.src = 'images/2017-showcase-gif.gif';
+    // img2017.src = 'images/2017-showcase-gif.gif';
+    img2017.src = 'http://sites.bxmc.poly.edu/~ifeoluwalawal/gifsFor2019ShowSite/2015-showcase-gif.gif';
 
     heading2017.style.color = 'white';
     heading2017.style.textShadow = '0px 3px 10px white';

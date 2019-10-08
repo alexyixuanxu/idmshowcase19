@@ -33,41 +33,21 @@ html, body {
 
 /*----------------------------*/
 
-#landing-parent {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-}
 
 #landing-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 50%;
-    padding: 10% 0 15% 5%;
+    width: 100%;
+    padding: 10% 0 15% 0;
     background-color: #1F1F1F;
     color: #00A0C6;
 }
 
-#landing-page2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    padding-top: 10%;
-    /* padding: 10% 0 15% 5%; */
-    /* background-color: #1F1F1F; */
-    color: #00A0C6;
-}
-
 #landing-page-heading {
-    font-size: 140px;
-    /* margin: 4%; */
+    font-size: 200px;
+    margin: 4%;
     color: #FFFE00;
     text-shadow: 0px 3px 20px #FFFE00, -10px -10px #F0037F, -10px -7px 20px #F0037F, -20px -20px #00A0C6, -20px -17px 20px #00A0C6;
 }
@@ -77,27 +57,16 @@ html, body {
 }
 
 @media screen and (max-width: 1100px) {
-  #landing-page-heading {
-      font-size: 150px;
-  }
-  #landing-page {
-      width: 100%;
-      text-align: center;
-      padding: 35% 0 35%;
-      order: 1;
-  }
-  #landing-parent {
-      flex-direction: column;
-      height: 100%;
-  }
-
+    #landing-page-heading {
+        font-size: 150px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     #landing-page-heading {
         font-size: 100px;
     }
-
+    
     #landing-page {
         padding-top: 20%;
     }
@@ -107,12 +76,9 @@ html, body {
     #landing-page-heading {
         font-size: 60px;
     }
-
+    
     #landing-page {
         padding-top: 30%;
-    }
-    #landing-parent {
-      padding: 10%;
     }
 }
 
@@ -120,7 +86,7 @@ html, body {
     #landing-page-heading {
         font-size: 50px;
     }
-
+    
     #landing-page {
         padding-top: 40%;
     }
@@ -129,9 +95,9 @@ html, body {
 
 /*----------------------------*/
 #main-nav {
-    /* background-color: #1F1F1F; */
+    background-color: #1F1F1F;
     width: 100%;
-    padding: 25px 25px;
+    padding: 25px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -139,7 +105,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     height: 60px;
     overflow: visible;
 /*    display: none;*/
@@ -190,8 +156,8 @@ html, body {
     padding: 6px 22px;
     border-radius: 63px;
     border: 3px solid #F0037F;
-    /* box-shadow: 0px 2px 20px #F0037F;
-    text-shadow: 0px 3px 10px #00A0C6; */
+    box-shadow: 0px 2px 20px #F0037F;
+    text-shadow: 0px 3px 10px #00A0C6;
     color: #00A0C6;
 }
 
@@ -222,12 +188,12 @@ html, body {
         display: block;
         margin-right: 10%;
         float: right;
-        width: 50px;
-        height: 50px;
+        width: 50px; 
+        height: 50px; 
 /*        background-color: gray;*/
         cursor: pointer;
         z-index: 2;
-
+        
         border: 2px solid #00A0C6;
         border-radius: 12px;
         box-shadow: 0px 3px 10px #00A0C6;
@@ -245,7 +211,7 @@ html, body {
         display: none;
         background-color: rgb(31, 31, 31);
         margin-top: 250px;
-
+        
         border: 2px solid #00A0C6;
     }
 
@@ -254,7 +220,7 @@ html, body {
         padding: 15px 15px 15px 0;
         display: block;
     }
-
+    
     #dropdown-about:hover, #dropdown-when-where:hover, #dropdown-previous-shows:hover, #dropdown-rsvp:hover {
         color: white;
     }
@@ -407,7 +373,7 @@ hr{
     .category {
         width: 50%;
     }
-
+    
     .category-heading {
         font-size: 35px;
     }
@@ -417,7 +383,7 @@ hr{
     .category {
         width: 100%;
     }
-
+    
     .category-heading {
         font-size: 40px;
     }
@@ -427,12 +393,12 @@ hr{
     #about-heading {
         width: 100%;
     }
-
+    
     #about-text {
         width: 80%;
         padding: 0 5%;
     }
-
+    
     #about-text-container {
         flex-direction: column;
         padding: 0 5%;
@@ -533,22 +499,22 @@ hr{
         flex-direction: column;
         padding-top: 30px;
     }
-
+    
     #google-maps-container {
         width: 100%;
         padding-top: 70%;
     }
-
+    
     #when-where-heading {
         width: 100%;
     }
-
+    
     #when-where-text {
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
-
+    
     #when-where-text-container {
         padding: 0 5%;
     }
@@ -715,7 +681,7 @@ hr{
     #prev-show-2018-link, #prev-show-2017-link, #prev-show-2016-link, #prev-show-2015-link {
         width: 100%;
     }
-
+    
     #img-2018, #img-2017, #img-2016, #img-2015 {
         width: 100%;
     }
@@ -731,12 +697,12 @@ hr{
     #previous-shows-heading {
         width: 100%;
     }
-
+    
     #previous-shows-text {
         width: 80%;
         padding: 0 5% 40px;
     }
-
+    
     #previous-shows-text-container {
         flex-direction: column;
         padding: 0 5%;
@@ -776,7 +742,7 @@ hr{
 
 /*----------------------------*/
 
-/* footer {
+footer {
     width: 100%;
     height: 170px;
     background-color: #1F1F1F;
@@ -804,7 +770,7 @@ hr{
     text-decoration: none;
     border-radius: 50%;
     line-height: 16px;
-
+    
     border: 2px solid #F0037F;
     color: #F0037F;
     box-shadow: 0px 3px 10px #F0037F;
@@ -891,4 +857,4 @@ hr{
 
 #footer-text-links-container a:hover {
     color: white;
-} */
+}

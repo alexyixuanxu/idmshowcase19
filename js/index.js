@@ -21,7 +21,7 @@ $("#btn-installation").on("click", function(){
    shuffleInstance.filter('Installation');
 });
 $("#btn-VRAR").on("click", function(){
-   shuffleInstance.filter('VR/AR');
+   shuffleInstance.filter('VR/AR/MR');
 });
 $("#btn-ID").on("click", function(){
    shuffleInstance.filter('Interactive Design');
@@ -32,10 +32,13 @@ $("#btn-Perf").on("click", function(){
 $("#btn-UX").on("click", function(){
    shuffleInstance.filter('UX/UI/App');
 });
+$("#btn-Oth").on("click", function(){
+   shuffleInstance.filter('Other');
+});
 $("#random").on("click", function() {
   shuffleInstance.sort({randomize:true})
 });
-setTimeout(function() {shuffleInstance.sort({randomize:true})}, 1000)
+// setTimeout(function() {shuffleInstance.sort({randomize:true})}, 1000)
 // setTimeout(function() {shuffleInstance.sort({randomize:false})}, 1500)
 
 

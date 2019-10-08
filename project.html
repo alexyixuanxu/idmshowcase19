@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0047)https://vestride.github.io/Shuffle/flexbox-grid -->
+<!-- A big thank you to Vestride's shuffle.js code and documentation: https://vestride.github.io/Shuffle/ A majority of this website would not have been possible without your library and documentation.
+As well as the React Js library that allowed me to create each page programatically to then be copied over as static pages. https://reactjs.org/
+A thank you to Vincent Garreau for his particle code: https://vincentgarreau.com/particles.js/
+And finally a big thank you to al the students of Integrated Digital Media -->
 <html lang="en" class="gr__vestride_github_io">
 
 <head>
@@ -7,10 +10,27 @@
 
   <title>IDM Thesis And Senior Projects 2019 </title>
 
+  <meta name="description" content="2 Nights! 2 Amazing showcases of IDM students tackling the challenges of 2019 through exploratory design. Come see how NYU Tandon School of engineering integrated digital media (IDM) students are using product prototypes, installations, interactive experiences, photography and film, VR/AR, games, and other tech mediums to shape the future.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Flexbox Grid Demo">
+  <meta property="og:description" content="2 Nights! 2 Amazing showcases of IDM students tackling the challenges of 2019 through exploratory design. Come see how NYU Tandon School of engineering integrated digital media (IDM) students are using product prototypes, installations, interactive experiences, photography and film, VR/AR, games, and other tech mediums to shape the future.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://bxmc.poly.edu/idmshow/">
+  <meta property="og:image" content="http://bxmc.poly.edu/idmshow/">
+  <meta property="og:site_name" content="idmshowcase19">
+  <meta property="fb:admins" content="771347349">
+  <meta name="author" content="IDM Web Team (Shirley Chin, Alex Yixuan Xu, Ifeoluwa Lawal)">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@idmnyu">
+  <meta name="twitter:title" content="idmnyu">
+  <meta name="twitter:description" content="2 Nights! 2 Amazing showcases of IDM students tackling the challenges of 2019 through exploratory design. Come see how NYU Tandon School of engineering integrated digital media (IDM) students are using product prototypes, installations, interactive experiences, photography and film, VR/AR, games, and other tech mediums to shape the future.">
+  <meta name="twitter:image" content="">
+
   <link rel="icon" type="image/png" href="IDM.png">
 
   <link rel="stylesheet" href="./css/bootstrap.min.css">
 
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/project.css">
   <link rel="stylesheet" href="./css/particle.css">
   <link rel="stylesheet" href="./css/paroller.css">
@@ -30,7 +50,6 @@
 
 <body class="vsc-initialized is-loading" data-gr-c-s-loaded="true">
 
-
   <!-- particles.js container -->
   <div id="particles-js"></div>
 
@@ -38,69 +57,393 @@
   <script src="js/particles.min.js"></script>
   <script src="js/app.js"></script>
 
-
   <div>
+    <div id="landing-parent">
+
+      <header id="landing-page2">
+        <h1 id="landing-page-heading" class="neon-glow-light-font flash">SPECTRA</h1>
+        <h2 class="all-round-gothic-book-font">HAPPENED MAY 17TH</h2>
+        <h2 class="all-round-gothic-book-font">2 METROTECH CENTER</h2>
+
+        <br><br><br>
+      </header>
+
+    </div>
     <div class="container">
       <nav id="main-nav">
-        <h1 id="h1Nav">IDM Thesis Projects</h1>
         <div id="main-nav-logo-container">
-          <li><a href="https://alexyixuanxu.github.io/idmshowcase19/"><img id="showcase-logo" src="./imgs/idmstickertransparent.png" alt="IDM Showcase 2019 Logo"></a></li>
+          <li><a href=""><img id="showcase-logo" src="images/idmstickertransparent.png" alt="IDM Showcase 2019 Logo"></a></li>
         </div>
       </nav>
-      <div class="filters-group"><label class="filter-label">Search</label><input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"></div>
+
+      <h1 id="h-Nav">IDM Thesis Projects</h1>
+      <div class="filters-group"><label class="filter-label">Search (by project name or creator name)</label><input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input"></div>
       <div class="filter-label"> Filter </div>
       <div class="btn-group filter-options"><button id="all" class="btn">All</button><button id="btn-print" class="btn">Print</button><button id="btn-installation" class="btn">Installation</button><button id="btn-VRAR" class="btn">VR/AR/MR</button><button
-          id="btn-ID" class="btn">Interactive Design</button><button id="btn-UX" class="btn">UX/UI/App</button><button id="btn-Perf" class="btn">Performance</button><button id="random" class="btn">Random</button></div>
+          id="btn-ID" class="btn">Interactive Design</button><button id="btn-UX" class="btn">UX/UI/App</button><button id="btn-Perf" class="btn">Performance</button>
+        <button id="btn-Oth" class="btn">Other</button><button id="random" class="btn">Random</button></div>
     </div>
+
     <main id="main">
       <div class="container mb-4 animated fadeInUp">
-        <div id="grid" class="my-shuffle-container row shuffle" style="overflow:visible">
-          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Performance&quot;]"><a href="Lucas White.html"><img src="http://lucwhite.com/Assets/Stare.gif"> </a>
+        <div id="grid" class="my-shuffle-container row shuffle">
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Podcast&quot;,&quot;Other&quot;]"><a href="Abhiroop CVK.html"><img src="https://drive.google.com/uc?id=1jV_ckZt2GuH8hY_QNDp3Vn3_XBxQfATB"
+                alt="Photo documentation of &quot;How to Buy a Home in 2019&quot; by Abhiroop CVK"> </a>
+            <div class="dataGp"> Podcast</div>
             <div class="card-body sub-menu">
-              <div> Till I See You Again by </div>
-              <div> Lucas White </div>
+              <div> How to Buy a Home in 2019 by </div>
+              <div> Abhiroop CVK </div>
             </div>
           </div>
-          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;]"><a href="Ari Bennett.html"><img src="https://scontent-lga3-1.cdninstagram.com/vp/28030da5b76e630ee5c2023365050b42/5D30130B/t51.2885-15/e35/47586089_1105027843013388_7095002458914796384_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com">
-            </a>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Website&quot;,&quot;Other&quot;]"><a href="Ki Hyun Kim.html"><img src="https://drive.google.com/uc?id=1cSMgk7dgG4mjpqmX4-epU9fL2GmxgKAy"
+                alt="Photo documentation of &quot;The History of K-Pop&quot; by Ki Hyun Kim"> </a>
+            <div class="dataGp"> Website</div>
             <div class="card-body sub-menu">
-              <div> Illustration Prints! by </div>
-              <div> Ari Bennett </div>
+              <div> The History of K-Pop by </div>
+              <div> Ki Hyun Kim </div>
             </div>
           </div>
-          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Physical Computing&quot;,&quot; Interactive Design&quot;]"><a href="Eric Modzelewski.html"><img src="http://emodz.info/process/tubes.JPG">
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;]"><a href="Cassidy Haney.html"><img src="https://drive.google.com/uc?id=1QLzA8kVF-w6OwZX7Z1WveysXuALaHhen" alt="Photo documentation of &quot;i have multiple showing&quot; by Cassidy Haney">
             </a>
+            <div class="dataGp"> Installation</div>
             <div class="card-body sub-menu">
-              <div> Music Visualization with Air by </div>
-              <div> Eric Modzelewski </div>
+              <div> i have multiple showing by </div>
+              <div> Cassidy Haney </div>
             </div>
           </div>
-          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;]"><a href="Jennifer Du.html"><img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/345bd19a7b5a1d53be604f6e12bc3bcc/b34ce824-7bf5-46ec-91cb-d51223d8828d_rw_3840.jpg?h=52fe2503254cff7ff80983c875bc32bd">
-            </a>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;VR/AR/MR&quot;,&quot;Installation&quot;]"><a href="Yunzhu Li.html"><img src="https://drive.google.com/uc?id=1dnF5HYiSrI0smqbCOlP93DoX-g0_wyum"
+                alt="Photo documentation of &quot;Visualizing Central Park From A Hawk’s Perspective: In The Past, Present, And Future&quot; by Yunzhu Li"> </a>
+            <div class="dataGp"> VR/AR/MR, Installation</div>
             <div class="card-body sub-menu">
-              <div> The Space Asian Americans Inhabit by </div>
-              <div> Jennifer Du </div>
+              <div> Visualizing Central Park From A Hawk’s Perspective: In The Past, Present, And Future by </div>
+              <div> Yunzhu Li </div>
             </div>
           </div>
-          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Ankita Deshpande.html"><img src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/11bc8885fab4c78486528a705405366b/dfc10ef9-781a-4c7d-a50e-feedcf470c5c_rw_1200.jpeg?h=acd6c45bbcd4d10474c78d798a3372de">
-            </a>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;,&quot;UX/UI/App&quot;,&quot;Design for Accessibility&quot;,&quot;Inclusive Design&quot;,&quot;Other&quot;]"><a href="Ankita Deshpande.html"><img
+                src="https://drive.google.com/uc?id=1Ur6to0FXZsQNfn__bePehKM9cjSlmS7e" alt="Photo documentation of &quot;SeeUX&quot; by Ankita Deshpande"> </a>
+            <div class="dataGp"> Print, UX/UI/App, Design for Accessibility, Inclusive Design</div>
             <div class="card-body sub-menu">
               <div> SeeUX by </div>
               <div> Ankita Deshpande </div>
             </div>
           </div>
-          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Interactive Design&quot;,&quot; Performance&quot;]"><a href="Robert Ruth.html"><img src="https://static1.squarespace.com/static/53c72efce4b0b83abfc8ee8d/t/5c533aeb1905f4c635689af1/1548958466726/Snapseed+6.jpg?format=2500w">
-            </a>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;,&quot;Interactive Design&quot;]"><a href="Annie Brinich.html"><img src="http://sites.bxmc.poly.edu/~anniebrinich/risk-perceptionsoption1@3x.png"
+                alt="Photo documentation of &quot;Risk Perception and Response in Digital Environments&quot; by Annie Brinich"> </a>
+            <div class="dataGp"> UX/UI/App, Interactive Design</div>
             <div class="card-body sub-menu">
-              <div> Silver Ratio by </div>
+              <div> Risk Perception and Response in Digital Environments by </div>
+              <div> Annie Brinich </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;]"><a href="Rose Bender.html"><img src="https://lh3.googleusercontent.com/EK2eRNYAuV1izZZ4INuve5gZIY6VHh72HVIJFFV-Go3tyE2Zhj-uYdCmZNf_zaDgSLaehj2Uxx_H27EpHfUaadyA6S48lBdZ0BPBSk4IAaZzgl2LGmOS3k7Pz7lpHFIlsAqdc86mFgpOhtLNJWwuoxRsl2zsfWnemuqtm5JnDdo0y3-5rHvSNxmZ-VacySwG1gbcY_HxXBz8oTtnXWHlQKbO_C0ol1sG1By0LRIKlHlVfm2AAy8B-oFZDMkDKh3F-98rmfYGWDkxu9zMi6gMQjhxuhY1jvfFXR8KL5bi3XPBiJtkpEEaAAABMsS4soFs3-HPPy6QEd-Vt3n3ntLSBXV9Qh5l49I3kIZxP3Izi6BdqMQZb74SOr2XqVnVx0AMejwbkzT8sa-XphAANpokmUOM76WeJTKKyjJBHmQTDU_3FZJLa2_a6krl73DbE2Dpk5yL76O22RXBi3mRKFZL0lXvhNjvlY98Z_7i_7livSy8zJRu4KqwXkFrl_3eJCvol3s1JWUz-KOFrvYJyf_d5fLlsJg-G5-1GDw7y6m4LTn_OU4lAZYDwhHdsbdpkVghO57awRxDWTjYe_zPevYviePI_u0QCS2mBstM9SWFVAxiiD1AQRm0G6A5JMMuFqpw9H83ueTbrKIrpvXOeJxDcj4RPC7Op0Gkdzcfeh-QvM1hFSlYYYudNiY9aw49zcrJLuBafCymmCUXUqW_xo4z=w1410-h1878-no"
+                alt="Photo documentation of &quot;Welcome to Connivance: an interactive mystery&quot; by Rose Bender"> </a>
+            <div class="dataGp"> Installation</div>
+            <div class="card-body sub-menu">
+              <div> Welcome to Connivance: an interactive mystery by </div>
+              <div> Rose Bender </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;]"><a href="Katie Lau.html"><img src="https://drive.google.com/uc?id=1jZbXKaqQpkuqhm8ZhPhOkqexitrzXxOY" alt="Photo documentation of &quot;The Essential Field Guide to Social Media Posts&quot; by Katie Lau">
+            </a>
+            <div class="dataGp"> Print</div>
+            <div class="card-body sub-menu">
+              <div> The Essential Field Guide to Social Media Posts by </div>
+              <div> Katie Lau </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Rashid Aziz.html"><img src="https://drive.google.com/uc?id=12c1nPQDIiF-QuyEpzJKD-WwwDIMTZfmh" alt="Photo documentation of &quot;Shpaces&quot; by Rashid Aziz">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> Shpaces by </div>
+              <div> Rashid Aziz </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;,&quot;Workshop&quot;,&quot;Other&quot;]"><a href="Debbi Litt.html"><img src="https://drive.google.com/uc?id=1h1THIfbPyJ78rXU1n_GbhOl0X9UiA-94"
+                alt="Photo documentation of &quot;Mourning Routine&quot; by Debbi Litt"> </a>
+            <div class="dataGp"> UX/UI/App, Workshop</div>
+            <div class="card-body sub-menu">
+              <div> Mourning Routine by </div>
+              <div> Debbi Litt </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Performance/Wearables&quot;,&quot;Other&quot;]"><a href="Katie Pulles.html"><img src="https://drive.google.com/uc?id=1TUHIfGC-yxE1tdb7_GCf3_93vkdZ8XUz"
+                alt="Photo documentation of &quot;Plants For All&quot; by Katie Pulles"> </a>
+            <div class="dataGp"> Performance/Wearables</div>
+            <div class="card-body sub-menu">
+              <div> Plants For All by </div>
+              <div> Katie Pulles </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;VR/AR/MR&quot;,&quot;Wearables&quot;,&quot;Interactive Design&quot;,&quot;Other&quot;]"><a href="Marissa Wilkins.html"><img src="https://drive.google.com/uc?id=1dbzc6qlLhj5g5yZIYGH2Hmd9OVHEQwED"
+                alt="Photo documentation of &quot;User-Centered Narrative &amp; Brain Computer Interaction: A Systems Thinking Approach&quot; by Marissa Wilkins"> </a>
+            <div class="dataGp"> VR/AR/MR, Wearables, Interactive Design</div>
+            <div class="card-body sub-menu">
+              <div> User-Centered Narrative &amp; Brain Computer Interaction: A Systems Thinking Approach by </div>
+              <div> Marissa Wilkins </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;game&quot;,&quot;Other&quot;]"><a href="XinYu Jiang.html"><img src="https://drive.google.com/uc?id=16Jk9GB6peH10-1bugCrGhLE7A5CzyrTu"
+                alt="Photo documentation of &quot;Flow&quot; by XinYu Jiang"> </a>
+            <div class="dataGp"> game</div>
+            <div class="card-body sub-menu">
+              <div> Flow by </div>
+              <div> XinYu Jiang </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Video&quot;,&quot;Other&quot;]"><a href="Jonatan Wu.html"><img src="https://drive.google.com/uc?id=1dIMzOH0hFMCJDN-SAjA2hc5pafXoB1cA"
+                alt="Photo documentation of &quot;Exploring the Creative Process Behind VFX&quot; by Jonatan Wu"> </a>
+            <div class="dataGp"> Video</div>
+            <div class="card-body sub-menu">
+              <div> Exploring the Creative Process Behind VFX by </div>
+              <div> Jonatan Wu </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;,&quot;Graphic Design&quot;,&quot;Other&quot;]"><a href="Marilu Duque.html"><img src="https://drive.google.com/uc?id=12V0DtAnet_Ecs_Byc-y5GVQjuSVCwGEr"
+                alt="Photo documentation of &quot;The Year: 2066&quot; by Marilu Duque"> </a>
+            <div class="dataGp"> Print, Graphic Design</div>
+            <div class="card-body sub-menu">
+              <div> The Year: 2066 by </div>
+              <div> Marilu Duque </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;3D Animation&quot;,&quot;Other&quot;]"><a href="Joon Choi.html"><img src="https://drive.google.com/uc?id=1tXMq1-OBja-6ZLzJfzop1rXsZ_0eJ7Pd"
+                alt="Photo documentation of &quot;Facebook: The Next Big Pharma&quot; by Joon Choi"> </a>
+            <div class="dataGp"> 3D Animation</div>
+            <div class="card-body sub-menu">
+              <div> Facebook: The Next Big Pharma by </div>
+              <div> Joon Choi </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Video&quot;,&quot;Other&quot;]"><a href="Calvin Cheang.html"><img src="https://drive.google.com/uc?id=1wE7UdlShASG2k-TCbdVZlTyydGPv4pE1"
+                alt="Photo documentation of &quot;LLNY&quot; by Calvin Cheang"> </a>
+            <div class="dataGp"> Video</div>
+            <div class="card-body sub-menu">
+              <div> LLNY by </div>
+              <div> Calvin Cheang </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;,&quot;Performance&quot;]"><a href="Shimin(Simi) Gu.html"><img src="https://drive.google.com/uc?id=1KCq1lzsSXwJiejUdBpVpsPzlKuXoqywc"
+                alt="Photo documentation of &quot;Island: The Journey of Urban Solitude In The Digital Age&quot; by Shimin(Simi) Gu"> </a>
+            <div class="dataGp"> Installation, Performance</div>
+            <div class="card-body sub-menu">
+              <div> Island: The Journey of Urban Solitude In The Digital Age by </div>
+              <div> Shimin(Simi) Gu </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Video&quot;,&quot;Other&quot;]"><a href="Remi Wong.html"><img src="https://drive.google.com/uc?id=1DOEg5ZY7nE_1tnkgR0H4dU_LmfK_pCUK"
+                alt="Photo documentation of &quot;The Future Of Retail&quot; by Remi Wong"> </a>
+            <div class="dataGp"> Video</div>
+            <div class="card-body sub-menu">
+              <div> The Future Of Retail by </div>
+              <div> Remi Wong </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;,&quot;Print&quot;]"><a href="Jenny Du.html"><img src="https://drive.google.com/uc?id=1M90ulibSsdUJzFF177er0igUmH7I0LwG"
+                alt="Photo documentation of &quot;One Stop&quot; by Jenny Du"> </a>
+            <div class="dataGp"> Installation, Print</div>
+            <div class="card-body sub-menu">
+              <div> One Stop by </div>
+              <div> Jenny Du </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;,&quot;Interactive Design&quot;]"><a href="Jorge Torres.html"><img src="https://drive.google.com/uc?id=1K88M1th9mnmbtn75MgFKVD29gKjZ_kwi"
+                alt="Photo documentation of &quot;Nouvelle Norme&quot; by Jorge Torres"> </a>
+            <div class="dataGp"> UX/UI/App, Interactive Design</div>
+            <div class="card-body sub-menu">
+              <div> Nouvelle Norme by </div>
+              <div> Jorge Torres </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Video&quot;,&quot;Other&quot;]"><a href="Laura Schlossman.html"><img src="https://drive.google.com/uc?id=18CWWko7VIOCCpnGbtxpWZjz6lKMuICFo"
+                alt="Photo documentation of &quot;Jazz Hip Hop Sampling&quot; by Laura Schlossman"> </a>
+            <div class="dataGp"> Video</div>
+            <div class="card-body sub-menu">
+              <div> Jazz Hip Hop Sampling by </div>
+              <div> Laura Schlossman </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;VR/AR/MR&quot;]"><a href="Bridget DeFranco.html"><img src="https://drive.google.com/uc?id=1_kQcle1uBvZVVBwhmDvMnDIm1PdqAeKp" alt="Photo documentation of &quot;Made at Home&quot; by Bridget DeFranco">
+            </a>
+            <div class="dataGp"> VR/AR/MR</div>
+            <div class="card-body sub-menu">
+              <div> Made at Home by </div>
+              <div> Bridget DeFranco </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Event&quot;,&quot;Other&quot;]"><a href="Alejandra Villanueva.html"><img src="https://drive.google.com/uc?id=1yuK3kz9iguENSJknbQUkgoKLpgIB-KwL"
+                alt="Photo documentation of &quot;Sex + Game Jam&quot; by Alejandra Villanueva"> </a>
+            <div class="dataGp"> Event</div>
+            <div class="card-body sub-menu">
+              <div> Sex + Game Jam by </div>
+              <div> Alejandra Villanueva </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;]"><a href="Grace Tierney.html"><img src="https://drive.google.com/uc?id=1S9ud54gWlF_OMw9yqwQIHGhwrVx1_AYH" alt="Photo documentation of &quot;2˚ Difference&quot; by Grace Tierney">
+            </a>
+            <div class="dataGp"> Print</div>
+            <div class="card-body sub-menu">
+              <div> 2˚ Difference by </div>
+              <div> Grace Tierney </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;]"><a href="Valeria Pinto.html"><img src="https://drive.google.com/uc?id=15YLabPAo9FmvAz8OmNXgcIw0bLhSO2sB" alt="Photo documentation of &quot;Vibrant Palate&quot; by Valeria Pinto">
+            </a>
+            <div class="dataGp"> Print</div>
+            <div class="card-body sub-menu">
+              <div> Vibrant Palate by </div>
+              <div> Valeria Pinto </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Dong-ha Lee.html"><img src="https://drive.google.com/uc?id=1kvjnWVBhomJFr7tQdBwYVvwwRYI_mTEz" alt="Photo documentation of &quot;ChiManChu&quot; by Dong-ha Lee">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> ChiManChu by </div>
+              <div> Dong-ha Lee </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Shane Park.html"><img src="https://drive.google.com/uc?id=19pjvi_QyzOLeERRlm9Kq_dgsu7dLvY6i" alt="Photo documentation of &quot;ChiManChu&quot; by Shane Park">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> ChiManChu by </div>
+              <div> Shane Park </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;]"><a href="Stefon De Souza.html"><img src="https://drive.google.com/uc?id=1ibeIcjWzMkk7mziRU2F90_JCZaJPleGp" alt="Photo documentation of &quot;Bed Stuy: Do or Gentrify&quot; by Stefon De Souza">
+            </a>
+            <div class="dataGp"> Print</div>
+            <div class="card-body sub-menu">
+              <div> Bed Stuy: Do or Gentrify by </div>
+              <div> Stefon De Souza </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Physical Object&quot;,&quot;Other&quot;]"><a href="Carissa Phong.html"><img src="https://drive.google.com/uc?id=17qQEKQXR5EQtilWJLE7gXmuzFG_S1IsN"
+                alt="Photo documentation of &quot;Cardboard Eames Chair&quot; by Carissa Phong"> </a>
+            <div class="dataGp"> Physical Object</div>
+            <div class="card-body sub-menu">
+              <div> Cardboard Eames Chair by </div>
+              <div> Carissa Phong </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;,&quot;Performance&quot;]"><a href="Robert Ruth.html"><img src="https://drive.google.com/uc?id=1sLIPh796pZ793vi2dw_VlpIi8lLjwzZ9"
+                alt="Photo documentation of &quot;untitled signal paths [2019]&quot; by Robert Ruth"> </a>
+            <div class="dataGp"> Installation, Performance</div>
+            <div class="card-body sub-menu">
+              <div> untitled signal paths [2019] by </div>
               <div> Robert Ruth </div>
             </div>
           </div>
-
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Yihan Zhao.html"><img src="https://drive.google.com/uc?id=1TSYKfvgadERpxTjWuK-psPZJeodgHfjO" alt="Photo documentation of &quot;Motorvate&quot; by Yihan Zhao">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> Motorvate by </div>
+              <div> Yihan Zhao </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;GIFs&quot;,&quot;Other&quot;]"><a href="Joris Kwong.html"><img src="https://drive.google.com/uc?id=1zpKdYQrHyTJ_NqYS8dFT3j8b30zbOtsj"
+                alt="Photo documentation of &quot;Animated Climate Postcards&quot; by Joris Kwong"> </a>
+            <div class="dataGp"> GIFs</div>
+            <div class="card-body sub-menu">
+              <div> Animated Climate Postcards by </div>
+              <div> Joris Kwong </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Product&quot;,&quot;Other&quot;]"><a href="Eric Modzelewski.html"><img src="https://drive.google.com/uc?id=1wz0xGZ-_0Cip65otLm0t6G7mDM6c6CbP"
+                alt="Photo documentation of &quot;SnapLogger&quot; by Eric Modzelewski"> </a>
+            <div class="dataGp"> Product</div>
+            <div class="card-body sub-menu">
+              <div> SnapLogger by </div>
+              <div> Eric Modzelewski </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;AV EXPERIENCE&quot;,&quot;Other&quot;]"><a href="Ryan Chin.html"><img src="https://images.squarespace-cdn.com/content/5a365b858c56a8425eb0f104/1558383178916-IXTT57T6XUCO8Z9N2JQR/Capture.JPG?format=1000w&amp;content-type=image%2Fjpeg"
+                alt="Photo documentation of &quot;Rite of Passage&quot; by Ryan Chin"> </a>
+            <div class="dataGp"> AV EXPERIENCE</div>
+            <div class="card-body sub-menu">
+              <div> Rite of Passage by </div>
+              <div> Ryan Chin </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Game&quot;,&quot;Other&quot;]"><a href="Howard Park.html"><img src="https://drive.google.com/uc?id=1yre2ad7iTSCBMDGF9DeSpo4YNVRc01Po"
+                alt="Photo documentation of &quot;Prophecy's Chosen&quot; by Howard Park"> </a>
+            <div class="dataGp"> Game</div>
+            <div class="card-body sub-menu">
+              <div> Prophecy's Chosen by </div>
+              <div> Howard Park </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;VR/AR/MR&quot;,&quot;UX/UI/App&quot;]"><a href="Miguel Guerrero.html"><img src="https://drive.google.com/uc?id=18Ho8dCYDjwxM9vi821Hp9SP_o-505z-j"
+                alt="Photo documentation of &quot;Beacons AR Mobile Application&quot; by Miguel Guerrero"> </a>
+            <div class="dataGp"> VR/AR/MR, UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> Beacons AR Mobile Application by </div>
+              <div> Miguel Guerrero </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Machine Learning / voice analysis&quot;,&quot;Other&quot;]"><a href="Joanna Yen.html"><img src="https://drive.google.com/uc?id=1B9YxD1fEDHHleyub_yF7cIHeA1ATmV8R"
+                alt="Photo documentation of &quot;Say Something&quot; by Joanna Yen"> </a>
+            <div class="dataGp"> Machine Learning / voice analysis</div>
+            <div class="card-body sub-menu">
+              <div> Say Something by </div>
+              <div> Joanna Yen </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Print&quot;]"><a href="Ethan Santos Wong.html"><img src="https://drive.google.com/uc?id=1-6jSJAdMLiJAOiuArNJbPbCkwDCdziML" alt="Photo documentation of &quot;Sweeny's Solo Mission&quot; by Ethan Santos Wong">
+            </a>
+            <div class="dataGp"> Print</div>
+            <div class="card-body sub-menu">
+              <div> Sweeny's Solo Mission by </div>
+              <div> Ethan Santos Wong </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;VR/AR/MR&quot;]"><a href="Brittaney Chang.html"><img src="https://drive.google.com/uc?id=1ZKheyc5tg1p3Xq35w8_GBH56UHeuO3L7" alt="Photo documentation of &quot;Exploration of Colour and Emotion in 3D Space&quot; by Brittaney Chang">
+            </a>
+            <div class="dataGp"> VR/AR/MR</div>
+            <div class="card-body sub-menu">
+              <div> Exploration of Colour and Emotion in 3D Space by </div>
+              <div> Brittaney Chang </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;Installation&quot;]"><a href="Daniel Li.html"><img src="https://drive.google.com/uc?id=1FQ5bVGjtni7nte7CXHR0ZEV2APtL4ESQ" alt="Photo documentation of &quot;Cairned Psychogeographies: Crowdsourced Mappings of Space and Being&quot; by Daniel Li">
+            </a>
+            <div class="dataGp"> Installation</div>
+            <div class="card-body sub-menu">
+              <div> Cairned Psychogeographies: Crowdsourced Mappings of Space and Being by </div>
+              <div> Daniel Li </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Jillian Larson.html"><img src="https://drive.google.com/uc?id=1ToSs4C2UUtz1gIt_rDQNZ_l_X30PHnGh" alt="Photo documentation of &quot;L&amp;M Workbag&quot; by Jillian Larson">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> L&amp;M Workbag by </div>
+              <div> Jillian Larson </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Ahmed Razin.html"><img src="https://drive.google.com/uc?id=14mU0NT2uJxcCfIJliNaOIzPAvdTrGD26" alt="Photo documentation of &quot;Critme&quot; by Ahmed Razin">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> Critme by </div>
+              <div> Ahmed Razin </div>
+            </div>
+          </div>
+          <div class="grid__brick col-xl-4 shuffle-item shuffle-item--visible sub-menu-parent" data-groups="[&quot;UX/UI/App&quot;]"><a href="Anthony Ynami.html"><img src="https://drive.google.com/uc?id=1k2-5HrJ_peNoBMWpgKvN5EBOGLQ5UGC8" alt="Photo documentation of &quot;Web TherAppy&quot; by Anthony Ynami">
+            </a>
+            <div class="dataGp"> UX/UI/App</div>
+            <div class="card-body sub-menu">
+              <div> Web TherAppy by </div>
+              <div> Anthony Ynami </div>
+            </div>
+          </div>
           <div class="col-1 my-sizer-element"></div>
         </div>
       </div>
     </main>
+
     <footer>
       <h1> </h1><a href="https://www.instagram.com/idmnyu/?hl=en"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icons" height="1em" width="1em">
           <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
@@ -112,7 +455,7 @@
           <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
         </svg></a>
       <div id="footer-divider"></div>
-      <div id="footer-text-links-container"><a href="http://idm.engineering.nyu.edu/">IDM at NYU Tandon</a> |<a href="">Acknowledgements</a> |<a href="">Projects</a></div>
+      <div id="footer-text-links-container"><a href="http://idm.engineering.nyu.edu/">IDM at NYU Tandon</a> |<a href="">Acknowledgements</a> |<a href="http://idm.engineering.nyu.edu/category/student-showcase/">Past Shows</a></div>
     </footer>
   </div>
 
@@ -123,6 +466,7 @@
 
   <script src="./js/shuffle.js"></script>
   <script src="./js/jquery.paroller.min.js"></script>
+  <script src="js/script.js"></script>
 
   <script src="./js/padding-grid.js"></script>
 

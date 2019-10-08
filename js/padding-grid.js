@@ -16,7 +16,7 @@ $(window).resize(function() {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
 
-    shuffleInstance.sort({randomize:true});
+    // shuffleInstance.sort({randomize:true});
 
   }, 250);
   // setTimeout({shuffleInstance.sort({randomize:true})}, 3000));
