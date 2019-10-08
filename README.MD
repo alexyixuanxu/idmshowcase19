@@ -30,7 +30,7 @@
 
 ## Web Developers
 - [Alex Yuxian](https://ayxx.me/project-type/projects/) - project manager for all pages
-- [Shirley Chin]() - landing page
+- [Shirley Chin](https://github.com/sc17542?tab=overview&from=2019-03-01&to=2019-03-31) - landing page
 - [Ifeoluwa Lawal](https://ifelawal.com/) - projects page
 - [Clara Gilligan](https://www.claragilligan.com/) - acknowledgements page
 
