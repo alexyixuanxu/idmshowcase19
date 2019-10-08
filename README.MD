@@ -1,7 +1,7 @@
 # IDM Showcase 2019 Website
 Live preview of the website [here](https://alexyixuanxu.github.io/idmshowcase19/).
 
-## What did people like about the [previous website](http://bxmc.poly.edu/idmshow/)?
+## What did people like about the [previous website](http://sites.bxmc.poly.edu/~ifeoluwalawal/idmshowSite_04Final/)?
 - Single event, single page
 - Screen sized gifs at first sight, visually immersive
 - Data & Time at first sight, linked to RSVP page, straightforward
@@ -11,7 +11,32 @@ Live preview of the website [here](https://alexyixuanxu.github.io/idmshowcase19/
 ## Things to Improve
 - Header bar size
 - Responsive to different screen sizes
+- A look that matches the theme of the show
+- Better overall general design
+- A place to showcase student projects on the day of and after the show
 
 ## Wireframe
 
+- 
+
 ## Design
+
+- 
+
+# End results
+Final launched (April 26th 2019) [website](http://bxmc.poly.edu/idmshow/)
+Website promoted on the day of the show to showcase [student projects](http://sites.bxmc.poly.edu/~ifeoluwalawal/projectProfiles/). 
+
+# Acknowledgements 
+
+## Web Developers
+Alex Yuxian - project manager for all pages
+Shirley Chin - landing page
+Ifeoluwa Lawal - projects page
+Clara Gilligan - acknowledgements page
+
+## Web Designers
+Sara Nejad - landing page
+Clara Gilligan - acknowledgements page
+Ifeoluwa Lawal - projects page
+
