@@ -19,11 +19,11 @@
 
 ## Wireframe
 
-- 
+- [Sketch](https://drive.google.com/file/d/1s9qzuRS7a6RC7VPWsryjH0Sbh4i90mXa/view)
 
 ## Design
 
-- 
+- [Adobe XD design](https://xd.adobe.com/view/b0996654-25dd-4b6d-6f44-1c9efd872680-c6a8/?fullscreen)
 
 
 # Acknowledgements 
