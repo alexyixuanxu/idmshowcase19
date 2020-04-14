@@ -1,7 +1,6 @@
 # IDM Showcase 2019 Website
-- Final launched (April 26th 2019) [website](http://bxmc.poly.edu/idmshow/)
-- Website promoted on the day of the show to showcase [student projects](http://sites.bxmc.poly.edu/~ifeoluwalawal/projectProfiles/). 
-- Websites put together [here](https://alexyixuanxu.github.io/idmshowcase19/).
+- Here is how the launched website looked (April 26th 2019) [website](https://alexyixuanxu.github.io/idmshowcase19/)
+- Website archive of student projects for the show [student projects](https://alexyixuanxu.github.io/idmshowcase19/project.html). 
 
 ## What did people like about the [previous website](http://sites.bxmc.poly.edu/~ifeoluwalawal/idmshowSite_04Final/)?
 - Single event, single page
